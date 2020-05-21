@@ -19,8 +19,6 @@ socialImage: 'https://cdn-images-1.medium.com/max/1600/1*mMApZzre4jYR5owWyF8Vug.
 ---
 
 ![Promotional Image](https://cdn-images-1.medium.com/max/1600/1*mMApZzre4jYR5owWyF8Vug.jpeg)
-<span class="figcaption_hack">Original image source :
-[https://images.ctfassets.net/nj2caiz7hkjw/3VoFdDTP5SowwESKIOAgm/a111ddd784928b61045c8e811e1769be/webpack.png](https://images.ctfassets.net/nj2caiz7hkjw/3VoFdDTP5SowwESKIOAgm/a111ddd784928b61045c8e811e1769be/webpack.png)</span>
 
 According to [webpack’s official website](https://webpack.js.org/concepts),
 webpack is a _static module bundler_ for modern JavaScript applications. When
@@ -46,7 +44,7 @@ drastically slow down the load time of your javascript applications.
 
 Here are some cool ways you can reduce your webpack bundle size:
 
-### SCOPE HOISTING
+## SCOPE HOISTING
 
 Scope hoisting uses a smarter way to add the modules to the bundle.
 
@@ -55,38 +53,43 @@ what can scope hoisting do:
 ● Makes the JavaScript execute faster in the browser <br>
 ● Can reduce the bundle size
 
-**How do I do this?**
+### How do I do this?
 
 Add this one line in the plugin section of your webpack.config.js file:
 
-    ​​ webpack.optimize.ModuleConcatenationPlugin()
+```js
+
+webpack.optimize.ModuleConcatenationPlugin()
+```
 
 Although, it Requires webpack 3 or later.
 
-### USE WEBPACK 4 IN PRODUCTION
+## USE WEBPACK 4 IN PRODUCTION
 
 This is really important because using webpack 4 in production automatically
 removes all unnecessary white spaces, new lines etc. It can also tell some
 packages not include debug code.
 
-**How do I do this?**
+## How do I do this?
 
 create your production bundle like this
 
+```bash
     webpack -p --mode=production
+```
 
-Things it does:
+### Things it does:
 
 ● Enables minification with UglifyJS <br>
 ● Sets NODE_ENV to production
 
-### USE LODASH-WEBPACK-PLUGIN
+## USE LODASH-WEBPACK-PLUGIN
 
 If you are using lodash in your javascript project, you might want to check out
 lodash-webpack-plugin. It removes lodash features you don’t use. This will
 significantly reduce your bundle size.
 
-**How do I do this?**
+### How do I do this?
 
 Install the dependency from npm with the command
 
@@ -116,49 +119,55 @@ best:
 ●
 [https://github.com/danvk/source-map-explorer](https://github.com/danvk/source-map-explorer)
 
-### TREE SHAKING
+## TREE SHAKING
 
 Tree shaking is the process of removing dead code from your bundle. Dead code is
 code that is exported without being imported anywhere.
 
-**How do I do this?**
+### How do I do this?
 
-**1) Use ES6 module syntax**
+#### 1) Use ES6 module syntax**
 
 Make sure you use ES6 modules and import by module name as much as possible.
 Like this:
 
+```js
     import { connect } ​from ”react-redux”​;
-    ​​ ​
+```
 
 Instead of:
 
-    ​​ import reactRedux ​from ”react-redux”​;
-    ​​ ​
+```js
+    import reactRedux ​from ”react-redux”​;
+```
 
-**2) Update .babel.rc**
+
+#### 2) Update .babel.rc**
 
 Add modules: false to your babel config (usually in .​ babel.rc​).
 
 If you are using es2015 preset, it should look like this:
 
+```js
     presets: [
 
     [​”es2015"​, { ​”modules”​: ​false​ }]
 
     ]
+```
 
 If you are using babel-preset-env, then it should look like this:
-
+```js
     presets: [
 
     [​”env”​, { ​”modules”​: ​false​ }]
 
     ]
+```
 
-**3) Make sure you are using webpack 2 or later**
+#### 3) Make sure you are using webpack 2 or later
 
-### CODE SPLITTING
+## CODE SPLITTING
 
 With webpack you can split your bundle up into many smaller ones and only load
 the bundles needed by each page. You can even load the bundle asynchronously!
@@ -168,13 +177,13 @@ loading code for that modal only when the user clicks on the button that would
 open the modal. This would increase load time because you would have not loaded
 any of the modal code on the initial page load
 
-**How do I do this?**
+### How do I do this?
 
 Read more about how code splitting works:
 
 ● [Code-splitting](https://webpack.js.org/guides/code-splitting/)
 
-### References
+## References
 
 ● [https://survivejs.com/webpack/what-is-webpack/](https://survivejs.com/webpack/what-is-webpack/)<br>
 ● [https://www.sitepoint.com/beginners-guide-webpack-module-bundling/](https://www.sitepoint.com/beginners-guide-webpack-module-bundling/)<br>

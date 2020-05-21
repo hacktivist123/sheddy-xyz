@@ -1,16 +1,16 @@
 ---
 title: Styling Components in React
-date: "2020-05-03"
-template: "post"
+date: '2020-05-03'
+template: 'post'
 draft: false
-slug: "styling-components-in-react"
-category: "React"
+slug: 'styling-components-in-react'
+category: 'React'
 tags:
-  - "React"
-  - "Styling"
-  - "CSS"
+  - 'React'
+  - 'Styling'
+  - 'CSS'
 
-description: "React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc."
+description: 'React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc.'
 ---
 
 This article was originally published by myself on [Smashing Magazine](https://www.smashingmagazine.com/2020/05/styling-components-react/)
@@ -72,7 +72,7 @@ In other to make use of this styling inside our Box component all we need to do 
 
     export default Box;
 
-After creating the styles and importing it into `Box.js` \*\*\*\*file, we can then set the `className` attribute to the match what we have in the stylesheet.
+After creating the styles and importing it into `Box.js` file, we can then set the `className` attribute to the match what we have in the stylesheet.
 While using this strategy, you could also leverage on existing frameworks like; Bulma, Bootstrap, etc. These frameworks provide you with existing classes and components you could plug into your React application without styling every aspect of your application.
 
 ### Benefits of using CSS and SASS Stylesheets

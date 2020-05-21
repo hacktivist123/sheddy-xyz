@@ -3,16 +3,15 @@ title: 'ReactJS, The First Time'
 date: '2020-03-17'
 template: 'post'
 draft: false
-slug: 'possible-ways-to-reduce-your-webpack-bundle-size'
+slug: 'react-js-the-first-time'
 category: 'React'
 tags:
   - 'Javascript'
   - 'REACT'
   - 'Web Development'
 
-description: "ReactJS is a JavaScript UI library that was built and is being maintained by Facebook. React gives JavaScript developers the ability to think logically and functionally about building user interfaces."
+description: 'ReactJS is a JavaScript UI library that was built and is being maintained by Facebook. React gives JavaScript developers the ability to think logically and functionally about building user interfaces.'
 ---
-
 
 ## Table of Contents
 
@@ -72,19 +71,16 @@ Components are stand-alone and reusable pieces of code. They have the same purpo
 - **Class Components**: These are components that offer more control in the form of life cycle hooks, Managing and Handling state and API Calls. For example:
 
 ```js
-
 class MyComponent extends React.Component {
   render() {
-    return (
-         <div>This is a class component</div>
-    );
+    return <div>This is a class component</div>;
   }
 }
 ```
 
 - **Functional Components:** These are components that were meant for just rendering views until [React Hooks](https://reactjs.org/docs/hooks-intro.html) was introduced.
 
-    For example:
+  For example:
 
 ```js
 Function myComponent() {
@@ -92,7 +88,7 @@ Function myComponent() {
       <div>A functional Component</div>
   )
  }
- ```
+```
 
 ### B. Props
 
@@ -113,7 +109,7 @@ This is an example of how state in ReactJS is used:
 class Car extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {brand: "Ford"};
+    this.state = { brand: 'Ford' };
   }
   render() {
     return (
@@ -130,11 +126,11 @@ class Car extends React.Component {
 JSX is a syntax extension to JavaScript. It is similar to a template language, but it has the full power of JavaScript. JSX gets compiled to React.createElement() calls which return plain JavaScript objects called “React elements”.
 
 ```js
-  return (
-      <div>
-        <h1>My Car</h1>
-      </div>
-    );
+return (
+  <div>
+    <h1>My Car</h1>
+  </div>
+);
 ```
 
 The code in between the return method that looks like HTML is known as JSX
@@ -150,7 +146,7 @@ There are various ways to install or use ReactJS these could be via:
 
 You can quickly use in your HTML page by just adding it’s CDN directly to your HTML file using the following steps:
 
-**Step 1:** In the HTML page you want to add React to, add an empty ```<div>``` tag to create the container where you want to render something with React.
+**Step 1:** In the HTML page you want to add React to, add an empty `<div>` tag to create the container where you want to render something with React.
 
 For Example:
 
@@ -162,7 +158,7 @@ For Example:
 <!-- ... old HTML ... -->
 ```
 
-**Step 2:** Now, include three ```<script>``` tags to the HTML page just before the closing ```</body>``` tag.
+**Step 2:** Now, include three `<script>` tags to the HTML page just before the closing `</body>` tag.
 For Example:
 
 ```html
@@ -198,7 +194,7 @@ class Button extends React.Component {
     if (this.state.clicked) {
       return 'You clicked this button.';
     }
-    return e (
+    return e(
       'button',
       { onClick: () => this.setState({ clicked: true }) },
       'Click Me'
@@ -216,7 +212,7 @@ const domContainer = document.querySelector('#button_container');
 ReactDOM.render(e(Button), domContainer);
 ```
 
-The two lines of code above will find the ```<div>``` we added to our HTML in the first step, and then render our button React component inside of it.
+The two lines of code above will find the `<div>` we added to our HTML in the first step, and then render our button React component inside of it.
 
 ### Starting a Blank React App with Create-React-App
 
@@ -258,10 +254,10 @@ For yarn:
 Yarn start
 ```
 
-Any of the above commands will run the app you just created in development mode. You can open ```http://localhost:3000``` to view it in the browser.
+Any of the above commands will run the app you just created in development mode. You can open `http://localhost:3000` to view it in the browser.
 
-When you navigate to ```http://localhost:3000```you should see the page below displayed. Whatever change you make in the react code will automatically render here.
+When you navigate to `http://localhost:3000`you should see the page below displayed. Whatever change you make in the react code will automatically render here.
 
-![React App Screen](https://lh4.googleusercontent.com/ztzhjNLIZsKVYd7EbPTHnsbT-N05dsH4K_-N3BYIbtZYvknrpIoJkUmRomz4ke2I9OTuCisgvH27L13IKjtAJ6DwCFSSuWRWOzLmxOZIfDh_7vh6jG2b9LoDKS6Pw--X6zfsL1Sg )
+![React App Screen](https://lh4.googleusercontent.com/ztzhjNLIZsKVYd7EbPTHnsbT-N05dsH4K_-N3BYIbtZYvknrpIoJkUmRomz4ke2I9OTuCisgvH27L13IKjtAJ6DwCFSSuWRWOzLmxOZIfDh_7vh6jG2b9LoDKS6Pw--X6zfsL1Sg)
 
 I hope this guide to getting started with ReactJS has been helpful. There are many more things to explore and find in the world of JavaScript and I hope you’ll share what you learn.
