@@ -13,7 +13,7 @@ tags:
 description: 'React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc.'
 ---
 
-This article was originally published by myself on [Smashing Magazine](#)
+This article was originally published by myself on [Smashing Magazine](https://sheddy.xyz)
 
 ## Quick Summary
 
