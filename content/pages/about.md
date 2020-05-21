@@ -1,7 +1,7 @@
 ---
 title: 'About me'
 template: 'page'
-socialImage: '/static/images/photo.jpg'
+socialImage: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg'
 ---
 
 My Name is Shedrack Akintayo and I am a Software Engineer, Developer Advocate, and Technical Writer. I have 3 years professional expertise in Software Development, majoring mostly in Frontend technologies.

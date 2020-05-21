@@ -21,7 +21,7 @@ module.exports = {
   ],
   author: {
     name: 'Shedrack Akintayo',
-    photo: '/static/images/photo.jpg',
+    photo: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg',
     bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑 building useful things with javascript.'}`,
     contacts: {
       email: 'akintayoshedrack@gmail.com',
