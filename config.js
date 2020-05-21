@@ -4,24 +4,27 @@ module.exports = {
   url: 'https://sheddy.xyz',
   pathPrefix: '/',
   title: 'A Blog by Shedrack Akintayo',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  subtitle:
+    'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
   disqusShortname: '',
   postsPerPage: 4,
+  icon: 'static/photo.jpg',
   googleAnalyticsId: 'UA-123912722-2',
   useKatex: false,
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: '/pages/about',
     },
   ],
   author: {
     name: 'Shedrack Akintayo',
-    photo: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg',
+    photo:
+      'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg',
     bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑 building useful things with javascript.'}`,
     contacts: {
       email: 'akintayoshedrack@gmail.com',
@@ -29,6 +32,6 @@ module.exports = {
       twitter: 'coder_blvck',
       github: 'hacktivist123',
       linkedin: 'shedrackakintayo',
-    }
-  }
+    },
+  },
 };
