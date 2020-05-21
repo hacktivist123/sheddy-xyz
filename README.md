@@ -1,6 +1,6 @@
 # SHEDDY.XYZ
 
-Code for my personal Blog, Built with GatsbyJS.
+Code for my New Personal Blog, Built with GatsbyJS.
 
 
 ## CREDIT
