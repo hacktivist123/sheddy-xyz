@@ -48,29 +48,32 @@ CSS or SCSS Stylesheets is a styling strategy that involves the use of external 
 
 For example, we have a SASS file of styles called `Box.scss` we need to use in a component called `Box.js`**,** below is the code for our SASS file
 
-    // Box.scss
-    .Box {
-      margin: 40px;
-      border: 5px black;
-    }
-
-    .Box_content {
-      font-size: 16px;
-      text-align: center;
-    }
+```css
+/* Box.scss */
+.Box {
+  margin: 40px;
+  border: 5px #000;
+}
+.Box_content {
+  font-size: 16px;
+  text-align: center;
+}
+```
 
 In other to make use of this styling inside our Box component all we need to do is import the SASS file directly into our `Box.js` component like so:
 
-    import React from 'react';
-    import './Box.css';
+```js
+import React from 'react';
+import './Box.css';
 
-    const Box = () => (
-      <div className="Box">
-        <p className="Box_content"> Styling React Components </p>
-      </div>
-    );
+const Box = () => (
+  <div className='Box'>
+    <p className='Box_content'> Styling React Components </p>
+  </div>
+);
 
-    export default Box;
+export default Box;
+```
 
 After creating the styles and importing it into `Box.js` file, we can then set the `className` attribute to the match what we have in the stylesheet.
 While using this strategy, you could also leverage on existing frameworks like; Bulma, Bootstrap, etc. These frameworks provide you with existing classes and components you could plug into your React application without styling every aspect of your application.
@@ -98,36 +101,41 @@ The beauty of CSS modules happens at build time when the local class names which
 We can make use of CSS Modules in our React applications by importing the file directly into the component file.
 For example, the code below is an example of how to use a CSS module in a React Component.
 
-    //Box.css
-     :local(.container) {
-       margin: 40px;
-       border: 5px dashed pink;
-     }
-     :local(.content) {
-       font-size: 15px;
-       text-align: center;
-     }
+```css
+/* Box.css */
+:local(.container) {
+  margin: 40px;
+  border: 5px dashed pink;
+}
+:local(.content) {
+  font-size: 15px;
+  text-align: center;
+}
+```
 
 `:local(.className)` is used when you use create-react-app boilerplate because of webpack configurations
 
 When using webpack, you can add the loader and also include the module to your `webpack.config.js` in other to make CSS modules work with Webpack
 
-      test: /\.css$/,
-      loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-    }
+```js
+test: /\.css$/,
+loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+```
 
 In other to make use of this CSS Module inside our Box component we need to import the module file directly into our `Box.js` component and use the `className` instead of `style` prop to access the style like so:
 
-    import React from 'react';
-    import styles from './Box.css';
+```jsx
+import React from 'react';
+import styles from './Box.css';
 
-    const Box = () => (
-      <div className={styles.container}>
-        <p className={styles.content}> Styling React Components </p>
-      </div>
-    );
+const Box = () => (
+  <div className={styles.container}>
+    <p className={styles.content}> Styling React Components </p>
+  </div>
+);
 
-    export default Box;
+export default Box;
+```
 
 `styles` here is an object that contains the styles we created in `Box.css`. This object will contain the classes; `container` and `content` that maps to their respective styles. To make use of them, we assign the element’s `className` to the appropriate class we have in `Box.css`.
 
@@ -165,26 +173,28 @@ For example, if we need to implement styling in our `Box.js` file using styled c
 
 The code below is an implementation of all the steps we mentioned above;
 
-    import React from 'react';
-    import styled from 'styled-components';
+```jsx
+import React from 'react';
+import styled from 'styled-components';
 
-    const Box = styled.div`
-      margin: 40px;
-      border: 5px black;
-    `;
+const Box = styled.div`
+  margin: 40px;
+  border: 5px black;
+`;
 
-    const Content = styled.p`
-      font-size: 16px;
-      text-align: center;
-    `;
+const Content = styled.p`
+  font-size: 16px;
+  text-align: center;
+`;
 
-    const Box = () => (
-      <Box>
-        <Content> Styling React Components </Content>
-      </Box>
-    );
+const Box = () => (
+  <Box>
+    <Content> Styling React Components </Content>
+  </Box>
+);
 
-    export default Box;
+export default Box;
+```
 
 In the code above, we import the `styled` object from `styled-components`, which makes use of tagged template literals to style your component. We then create a variable that would hold our styling and also act as a wrapper around content, that’s why we have the `<Box>` and `<Content>` tags, in this variables, we assign it to the `styled` object plus the HTML element we want to style then followed by the accompanying styles for the HTML element. To use the variables we created for styling all we need to do is wrap our JSX or content in between them as tags.
 
@@ -223,88 +233,98 @@ React-JSS makes use of JSS with React using the new Hooks API. JSS and the defau
 
 The code below is an example of how React-JSS is used;
 
-    import React from 'react'
-    import {render} from 'react-dom'
-    import injectSheet, { ThemeProvider } from 'react-jss'
-    const styles = (theme) => ({
-      wrapper: {
-        padding: 40,
-        background: theme.background,
-        textAlign: 'center'
-      },
-      title: {
-        font: {
-          size: 40,
-          weight: 900,
-        },
-        color: props => props.color
-      },
-      link: {
-        color: theme.color,
-        '&:hover': {
-          opacity: 0.5
-        }
-      }
-    })
-    const Comp = ({ classes }) => (
-      <div className={classes.wrapper}>
-        <h1 className={classes.title}>Hello React-JSS!</h1>
-        <a
-          className={classes.link}
-          href="http://cssinjs.org/react-jss"
-          traget="_blank"
-        >
-          See docs
-        </a>
-      </div>
-    )
-    const StyledComp = injectSheet(styles)(Comp)
-    const theme = {
-      background: '#aaa',
-      color: '#24292e'
-    }
-    const App = () => (
-      <ThemeProvider theme={theme}>
-        <StyledComp color="red"/>
-      </ThemeProvider>
-    )
-    render(<App />, document.getElementById("root"))
+```jsx
+import React from 'react';
+import { render } from 'react-dom';
+import injectSheet, { ThemeProvider } from 'react-jss';
+const styles = (theme) => ({
+  wrapper: {
+    padding: 40,
+    background: theme.background,
+    textAlign: 'center',
+  },
+  title: {
+    font: {
+      size: 40,
+      weight: 900,
+    },
+    color: (props) => props.color,
+  },
+  link: {
+    color: theme.color,
+    '&:hover': {
+      opacity: 0.5,
+    },
+  },
+});
+const Comp = ({ classes }) => (
+  <div className={classes.wrapper}>
+    <h1 className={classes.title}>Hello React-JSS!</h1>
+    <a
+      className={classes.link}
+      href='http://cssinjs.org/react-jss'
+      traget='_blank'
+    >
+      See docs
+    </a>
+  </div>
+);
+const StyledComp = injectSheet(styles)(Comp);
+const theme = {
+  background: '#aaa',
+  color: '#24292e',
+};
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <StyledComp color='red' />
+  </ThemeProvider>
+);
+render(<App />, document.getElementById('root'));
+```
 
 In the code above, which somewhat similar to using styled components, we import `injectSheet` and `ThemeProvider` from the `react-jss` library. The `ThemeProvider` is a High-Order component in React, which passes the theme object down the React tree by the use of context. It will contain the root theme of the component. While `injectSheet` is used for injecting the stylesheet we have created in this case `styles` into the main component.
 
-    const Comp = ({ classes }) => (
-      <div className={classes.wrapper}>
-        <h1 className={classes.title}>Hello React-JSS!</h1>
-        <a
-          className={classes.link}
-          href="http://cssinjs.org/react-jss"
-          traget="_blank"
-        >
-          See docs
-        </a>
-      </div>
-    )
+```jsx
+const Comp = ({ classes }) => (
+  <div className={classes.wrapper}>
+    <h1 className={classes.title}>Hello React-JSS!</h1>
+    <a
+      className={classes.link}
+      href='http://cssinjs.org/react-jss'
+      traget='_blank'
+    >
+      See docs
+    </a>
+  </div>
+);
+```
 
 The code above is the main React component that has not been injected with the styles object we have created, it contains the main code for our React component and it is going to be styled when we inject it with the styles object that we have created.
 
-    const StyledComp = injectSheet(styles)(Comp)
+```js
+const StyledComp = injectSheet(styles)(Comp);
+```
 
 The line of code above is injecting the styles we have created into the component we created it for using the `injectSheet()` function.
 
-    const theme = {
-      background: '#aaa',
-      color: '#24292e'
-    }
+```jsx
+const theme = {
+  background: '#aaa',
+  color: '#24292e',
+};
+```
 
 The code above holds the theme object that would be passed to the `<ThemeProvider>` HOC via context and it acts as the root theme of our component.
 
-    const App = () => (
-      <ThemeProvider theme={theme}>
-        <StyledComp color="red"/>
-      </ThemeProvider>
-    )
+```jsx
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <StyledComp color='red' />
+  </ThemeProvider>
+);
+```
 
-In this portion of the code, what we are doing here is using the `<ThemeProvider>` HOC, we are rendering our component that we have injected the styled sheet we created into `<StyledComp color=` ` "``red``"``/> `
+In this portion of the code, what we are doing here is using the `<ThemeProvider>` HOC, we are rendering our component that we have injected the styled sheet we created into `<StyledComp color= 'red'/>`
 
 At the end of rendering, this is what will be displayed on your bro.
 
