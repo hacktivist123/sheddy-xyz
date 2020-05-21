@@ -4,8 +4,7 @@ module.exports = {
   url: 'https://sheddy.xyz',
   pathPrefix: '/',
   title: 'A Blog by Shedrack Akintayo',
-  subtitle:
-    'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  subtitle: 'A Blog for byte sized articles on Software Development and Developer Relations.',
   disqusShortname: '',
   postsPerPage: 4,
   icon: 'static/photo.jpg',
