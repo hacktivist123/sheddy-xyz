@@ -21,7 +21,7 @@ module.exports = {
   ],
   author: {
     name: 'Shedrack Akintayo',
-    photo: '/photo.jpg',
+    photo: '/static/media/photo.jpg',
     bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑 building useful things with javascript.'}`,
     contacts: {
       email: 'akintayoshedrack@gmail.com',

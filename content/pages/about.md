@@ -1,7 +1,7 @@
 ---
 title: 'About me'
 template: 'page'
-socialImage: '/photo.jpg'
+socialImage: '/static/media/photo.jpg'
 ---
 
 My Name is Shedrack Akintayo and I am a Software Engineer, Developer Advocate, and Technical Writer. I have 3 years professional expertise in Software Development, majoring mostly in Frontend technologies.
