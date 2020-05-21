@@ -71,7 +71,7 @@ These are the 4 basic hooks that are commonly used by react developers that have
 
 The `useState()` hook allows React developers update, handle and manipulate state inside functional components without needing to convert it to a class component. Let’s use the code snippet below is a simple Age counter component and we will use it explain the power and syntax of the `useState()` hook.
 
-```js
+```jsx
 function App() {
   const [age, setAge] = useState(19);
   const handleClick = () => setAge(age + 1);
@@ -104,7 +104,7 @@ We will use the code snippets below to explain the most basic way that we can us
 
 ### Step 1: Define the State of your application\*\*
 
-```js
+```jsx
 import React, { useState } from 'react';
 function App() {
   //Define State
@@ -126,7 +126,7 @@ Just like we discussed in the previous section on how to use the `useState()` ho
 
 ### Step 2: Call the useEffect hook
 
-```js
+```jsx
 import React, {useState, useEffect} from 'react';
    function App() {
       // Define State
@@ -158,7 +158,7 @@ Our React app should now look like this:
 
 We can also use change the title property of our application inside the ` useEffect``() ` function by calling the `setTitle()` function, like so
 
-```js
+```jsx
 import React, {useState, useEffect} from 'react';
   function App() {
       // Define State
@@ -197,7 +197,7 @@ The code snippets below will show how the Context API works and how the `useCont
 
 ### The normal way to use Context API
 
-```js
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -232,7 +232,7 @@ const NumberContext = React.createContext();
 
 Then we use the `Provider` value that was returned from the `NumberContext` we created to make a particular value available to all the children.
 
-```js
+```jsx
 function App() {
   return (
     <NumberContext.Provider value={45}>
@@ -246,7 +246,7 @@ function App() {
 
 With that, we can use the consumer value that was returned from the `NumberContext` we created to get the value we made available to all children. If you have noticed, this component did not get any props.
 
-```js
+```jsx
 function Display() {
   return (
     <NumberContext.Consumer>
@@ -264,7 +264,7 @@ Everything works well and the render props method we used is a really good patte
 **Using the useContext method**
 To explain the `useContext` method we will rewrite the `Display` component using the useContext hook.
 
-```js
+```jsx
 // import useContext (or we could write React.useContext)
 import React, { useContext } from 'react';
 
@@ -310,7 +310,7 @@ It is sort of an alternative to the `useState` hook, it is usually preferable to
 A custom Hook is a javascript function whose names is prefixed with the word “use” and can be used to call other hooks, it also lets you extract component logic into reusable functions. They are normal javascript functions that can make use of other hooks inside of it and it they also contain a common stateful logic that can be made use of within multiple components.
 The code snippets below demonstrates an example of a custom react hook for implementing infinite scroll by [Paulo Levy](https://github.com/pflevy).
 
-```js
+```jsx
 import { useState } from 'react';
 
 export const useInfiniteScroll = (start = 30, pace = 10) => {
@@ -330,7 +330,7 @@ export const useInfiniteScroll = (start = 30, pace = 10) => {
 This custom hook accepts 2 arguments which are `start` and `pace`. The start argument is the starting number of elements to be rendered while the pace argument is the subsequent number of elements that are to be rendered. By default, the start and pace arguments are set to 30 and 10 respectively which means you can actually call the hook without any arguments and those default values will be used instead.
 In other to use this hook in a react app, we would use it like so with an online API that returns fake data.
 
-```js
+```jsx
 import React, { useState, useEffect } from 'react';
 import { useInfiniteScroll } from './useInfiniteScroll';
 
