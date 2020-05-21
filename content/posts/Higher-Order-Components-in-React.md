@@ -1,16 +1,16 @@
 ---
 title: Higher Order Components in React
-date: "2020-05-04"
-template: "post"
+date: '2020-05-04'
+template: 'post'
 draft: true
-slug: "higher-order-components-in-react"
-category: "React"
+slug: 'higher-order-components-in-react'
+category: 'React'
 tags:
-  - "React"
-  - "Javascript"
-  - "Web Development"
+  - 'React'
+  - 'Javascript'
+  - 'Web Development'
 
-description: "React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc."
+description: 'React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc.'
 ---
 
 This article was originally published by myself on [Smashing Magazine](#)
@@ -79,17 +79,19 @@ A higher-order component is structured like a higher-order function, it;
 
 The code snippet below is how a higher-order component is structured in React:
 
-    import React from 'react';
-    // Take in a component as argument WrappedComponent
-    const higherOrderComponent = (WrappedComponent) => {
-    // And return a new anonymous component
-      class HOC extends React.Component {
-        render() {
-          return <WrappedComponent />;
-        }
-      }
-      return HOC;
-    };
+```jsx
+import React from 'react';
+// Take in a component as argument WrappedComponent
+const higherOrderComponent = (WrappedComponent) => {
+  // And return a new anonymous component
+  class HOC extends React.Component {
+    render() {
+      return <WrappedComponent />;
+    }
+  }
+  return HOC;
+};
+```
 
 From the code above you can see that `higherOrderComponent` takes in a component (`WrappedComponent`) and then returns a new anonymous component inside of it. With this technique, whenever we will need to reuse a particular component’s logic for something we can create a HOC out of that component and use it wherever we like.
 
@@ -109,30 +111,32 @@ In this section of this tutorial, we will be building a higher-order component t
 
 So generate a new react app with `create-react-app` like so:
 
+```bash
     npx create-react-app my-app
+```
 
 After generating a new React app, replace the code in your `index.js` with the following code snippet.
 
-    import React from 'react';
-    import { render } from 'react-dom';
-    const Hello = ({ name }) =>
-      <h1>
-        Hello {name}!
-      </h1>;
+```jsx
+import React from 'react';
+import { render } from 'react-dom';
+const Hello = ({ name }) => <h1>Hello {name}!</h1>;
 
-    function withName(WrappedComponent) {
-      return class extends React.Component {
-        render() {
-          return <WrappedComponent name="Smashing Magazine" {...this.props} />;
-        }
-      };
+function withName(WrappedComponent) {
+  return class extends React.Component {
+    render() {
+      return <WrappedComponent name='Smashing Magazine' {...this.props} />;
     }
-    const NewComponent = withName(Hello);
-    const App = () =>
-      <div>
-        <NewComponent />
-      </div>;
-    render(<App />, document.getElementById('root'));
+  };
+}
+const NewComponent = withName(Hello);
+const App = () => (
+  <div>
+    <NewComponent />
+  </div>
+);
+render(<App />, document.getElementById('root'));
+```
 
 After you have replaced the code in your `index.js` file, you should see the following displayed on your screen.
 
@@ -140,32 +144,38 @@ After you have replaced the code in your `index.js` file, you should see the fol
 
 Now let’s explain the code snippet we used bit by bit.
 
-    const Hello = ({ name }) =>
-      <h1>
-        Hello {name}!
-      </h1>;
+```jsx
+const Hello = ({ name }) => <h1>Hello {name}!</h1>;
+```
 
 Here, we are creating a functional component that has a prop called `name`, in this functional component, we are now rendering the Hello + the value of the name prop inside `<h1/>` tag.
 
-    function withName(WrappedComponent) {
-      return class extends React.Component {
-        render() {
-          return <WrappedComponent name="Smashing Magazine" {...this.props} />;
-        }
-      };
+```jsx
+function withName(WrappedComponent) {
+  return class extends React.Component {
+    render() {
+      return <WrappedComponent name='Smashing Magazine' {...this.props} />;
     }
+  };
+}
+```
 
 Here, we are creating a higher-order functional component called `withName()`, then we are returning an anonymous class component inside that renders the component wrapped inside the HOC and also assigning a value to the prop of the wrapped component.
 
-    const NewComponent = withName(Hello);
+```js
+const NewComponent = withName(Hello);
+```
 
 Here, we are creating a new component called `NewComponent` and using the HOC we created and assigning to it the functional component we created at the start of the codebase called `hello`.
 
-    const App = () =>
-      <div>
-        <NewComponent />
-      </div>;
-    render(<App />, document.getElementById('root'));
+```jsx
+const App = () => (
+  <div>
+    <NewComponent />
+  </div>
+);
+render(<App />, document.getElementById('root'));
+```
 
 All we are doing here is we are creating another functional component called `App` that will render the `NewComponent` that we upgraded with our HOC in a `<div>` and then we are using the react-dom function `render` in other to display the component in our browser.
 
