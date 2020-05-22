@@ -8,7 +8,7 @@ type Props = {
   postSlug: string
 };
 
-const Comments = ({ postTitle, postSlug }: Props) => {
+const Comments = ({ postTitle, postSlug } : Props) => {
   const { url, disqusShortname } = useSiteMetadata();
 
   if (!disqusShortname) {
