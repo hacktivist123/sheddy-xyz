@@ -1,5 +1,5 @@
 ---
-title: Styling Components in React
+title: Styling Components in React 💅
 date: '2020-05-03'
 template: 'post'
 draft: false
