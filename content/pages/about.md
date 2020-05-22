@@ -12,10 +12,6 @@ I’m well experienced in writing API documentation, as well as building APIs, u
 
 I have 2 years plus experience in Technical writing for Companies and Publications (currently writing for Smashing Magazine, ITNEXT and also Codeburst) and also I have a track record in helping many developer communities in my locality organise and plan events.
 
-### Main Spoken Language
-
-- English
-
 ## Technologies & Skills
 
 - Javascript
@@ -27,3 +23,7 @@ I have 2 years plus experience in Technical writing for Companies and Publicatio
 - API Documentation
 - Communication
 - Organizing Developer-Driven Events
+
+### Main Spoken Language
+
+- English
