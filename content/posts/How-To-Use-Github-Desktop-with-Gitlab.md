@@ -1,5 +1,5 @@
 ---
-title: How to use GitHub Desktop with Gitlab
+title: How to use GitHub Desktop with Gitlab 
 date: "2018-10-12"
 template: "post"
 draft: false

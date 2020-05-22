@@ -110,6 +110,13 @@ module.exports = {
             },
           },
           {
+            resolve: '@pauliescanlon/gatsby-remark-sticky-table',
+            options: {
+              height: 250,
+              backgroundColor: '#ffffff',
+            }
+          },
+          {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
           },
@@ -118,6 +125,7 @@ module.exports = {
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           'gatsby-remark-external-links',
+
         ],
       },
     },
