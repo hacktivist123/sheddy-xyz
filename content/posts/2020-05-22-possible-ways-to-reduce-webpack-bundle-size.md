@@ -3,7 +3,7 @@ template: post
 title: Possible Ways To Reduce Webpack Bundle Size
 slug: possible-ways-to-reduce-webpack-bundle-size
 draft: false
-date: 2020-05-22T17:52:49.655Z
+date: 2019-02-20T17:52:49.655Z
 description: |-
   webpack is a static module bundler for modern JavaScript applications. When
   webpack processes your application, it internally builds a [dependency
