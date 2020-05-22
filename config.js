@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'A Blog by Shedrack Akintayo',
   subtitle: 'A Blog for byte sized articles on Software Development and Developer Relations.',
-  disqusShortname: '',
+  disqusShortname: 'sheddyxyz',
   postsPerPage: 4,
   icon: 'static/photo.jpg',
   googleAnalyticsId: 'UA-123912722-2',
