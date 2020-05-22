@@ -1,6 +1,6 @@
-# SHEDDY.XYZ
+# SHEDDY-XYZ
 
-Code for my New Personal Blog, Built with GatsbyJS.
+This Repository contains the code for my new personal blog, built with GatsbyJS.
 
 
 ## CREDIT
