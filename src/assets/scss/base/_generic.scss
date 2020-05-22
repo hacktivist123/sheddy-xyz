@@ -169,3 +169,36 @@ figcaption {
   }
 
 }
+
+.remark-sticky-table {
+  border-radius: 2px;
+  border: 1px 1px  solid #fff;
+  height: 870px !important;
+  min-width: 60% !important;
+  margin: 48px 0px;
+}
+
+.remark-sticky-table-table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.remark-sticky-table-th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid rgb(11, 10, 10);
+}
+
+.remark-sticky-table-tbody {
+  color: #c9c5c5;
+  border-bottom: 1px solid;
+}
+
+.remark-sticky-table-th,
+.remark-sticky-table-td {
+  padding: 16px;
+}
