@@ -15,6 +15,7 @@ const PagePreview = ({ entry, widgetFor }: Props) => {
     <div className="page">
       <h1 className="page__title">{title}</h1>
       <div className="page__body">{ body }</div>
+      <div></div>
     </div>
   );
 };
