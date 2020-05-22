@@ -16,6 +16,10 @@ module.exports = {
       path: '/',
     },
     {
+      label: 'Talks',
+      path: '/pages/talks'
+    },
+    {
       label: 'About me',
       path: '/pages/about',
     },
