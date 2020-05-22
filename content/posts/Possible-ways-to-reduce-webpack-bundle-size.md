@@ -15,7 +15,9 @@ tags:
   - Webpack
   - Tooling
   - Web Development
+socialImage: 'https://cdn-images-1.medium.com/max/1600/1*mMApZzre4jYR5owWyF8Vug.jpeg'
 ---
+
 ![Promotional Image](https://cdn-images-1.medium.com/max/1600/1*mMApZzre4jYR5owWyF8Vug.jpeg)
 
 According to [webpack’s official website](https://webpack.js.org/concepts),
@@ -56,7 +58,7 @@ what can scope hoisting do:
 Add this one line in the plugin section of your webpack.config.js file:
 
 ```js
-webpack.optimize.ModuleConcatenationPlugin()
+webpack.optimize.ModuleConcatenationPlugin();
 ```
 
 Although, it Requires webpack 3 or later.
@@ -123,7 +125,7 @@ code that is exported without being imported anywhere.
 
 ### How do I do this?
 
-#### 1) Use ES6 module syntax**
+#### 1) Use ES6 module syntax\*\*
 
 Make sure you use ES6 modules and import by module name as much as possible.
 Like this:
@@ -138,8 +140,7 @@ Instead of:
     import reactRedux ​from ”react-redux”​;
 ```
 
-
-#### 2) Update .babel.rc**
+#### 2) Update .babel.rc\*\*
 
 Add modules: false to your babel config (usually in .​ babel.rc​).
 
@@ -150,24 +151,33 @@ If you are using es2015 preset, it should look like this:
     [​”es2015"​, { ​”modules”​: ​false​ }]
     ]
 ```
+
 If you are using babel-preset-env, then it should look like this:
+
 ```js
     presets: [
     [​”env”​, { ​”modules”​: ​false​ }]
     ]
 ```
+
 #### 3) Make sure you are using webpack 2 or later
+
 ## CODE SPLITTING
+
 With webpack you can split your bundle up into many smaller ones and only load
 the bundles needed by each page. You can even load the bundle asynchronously!
 For example, if you have a modal, then you can carry out code splitting by
 loading code for that modal only when the user clicks on the button that would
 open the modal. This would increase load time because you would have not loaded
 any of the modal code on the initial page load
+
 ### How do I do this?
+
 Read more about how code splitting works:
 ● [Code-splitting](https://webpack.js.org/guides/code-splitting/)
+
 ## References
+
 ● [https://survivejs.com/webpack/what-is-webpack/](https://survivejs.com/webpack/what-is-webpack/)<br>
 ● [https://www.sitepoint.com/beginners-guide-webpack-module-bundling/](https://www.sitepoint.com/beginners-guide-webpack-module-bundling/)<br>
 ● [https://webpack.js.org/concepts](https://webpack.js.org/concepts)
