@@ -16,9 +16,22 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: $typographic-base-body-color;
 }
-
+body.light{
+  margin: 0 0 0 calc(100vw - 100%);
+  font-family: $typographic-font-family;
+  color: $typographic-light-mode-font-color;
+  line-height: $typographic-base-line-height;
+  font-size: $typographic-base-font-size;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  transition: all 1s;
+}
 h1,
 h2,
 h3,
@@ -187,7 +200,7 @@ figcaption {
   background-color: #f7f7f7;
   font-weight: 600;
   text-align: left;
-  color: #000;
+  color: $typographic-base-body-color;
   border-bottom: 1px solid #fff;
   border-left: 1px solid rgb(11, 10, 10);
 }

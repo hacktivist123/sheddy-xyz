@@ -3,5 +3,10 @@
 
 .layout {
     lost-center: $layout-width;
-    background-color: #000;
+    background-color: $typographic-base-body-color;
+}
+
+.layout.light{
+    lost-center: $layout-width;
+    background-color: $color-base;
 }

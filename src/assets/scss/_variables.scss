@@ -6,11 +6,14 @@
 $color-base: #FFF;
 $color-primary: #7e5dff;
 $color-secondary: #f74646;
+$color-light: #fff;
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
+$typographic-base-body-color: #000;
+
 
 // Typographic
 $typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -22,8 +25,10 @@ $typographic-small-font-size: 14px;
 $typographic-base-line-height: 1.625;
 
 $typographic-base-font-color: $color-base;
+$typographic-light-mode-font-color: $color-light;
 $typographic-link-p-font-color: $color-primary;
 $typographic-link-s-font-color: $color-secondary;
+
 
 $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
 
