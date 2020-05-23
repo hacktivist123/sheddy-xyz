@@ -3,8 +3,12 @@ title: 'About me'
 template: 'page'
 socialImage: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg'
 ---
+Hi there, I'm Shedrack Akintayo! 👋
+I love to [write](/), code, and  [teach](/pages/talks). 
 
-My Name is Shedrack Akintayo and I am a Software Developer, Developer Advocate 🥑 and Technical Writer. I have 3-4 years professional expertise in Software Development, majoring mostly in Frontend technologies.
+I also love constant learning, growing and working towards becoming a better version of myself.
+
+ I am a Software Developer, Developer Advocate 🥑 and Technical Writer. I have 3-4 years professional expertise in Software Development, majoring mostly in Frontend technologies.
 
 I am experienced in organising developer driven events and also managing developer communities.
 
