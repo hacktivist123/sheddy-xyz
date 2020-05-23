@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://sheddy.xyz',
   pathPrefix: '/',
-  title: 'Shedrack Akintayo"s Blog',
+  title: 'Shedrack Akintayo - Blog',
   subtitle: 'A Blog for byte sized articles on Software Development and Developer Relations.',
   disqusShortname: '',
   postsPerPage: 4,
