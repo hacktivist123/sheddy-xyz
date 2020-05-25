@@ -4,3 +4,28 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+[[redirects]]
+from = "/github"
+to = "https://gihub.com/hacktivist123"
+status = 301
+force = true
+[[redirects]]
+from = "/linkedin"
+to = "https://linkedin.com/in/shedrackakintayo"
+status = 301
+force = true
+[[redirects]]
+from = "/twitter"
+to = "https://twitter.com/coder_blvck"
+status = 301
+force = true
+[[redirects]]
+from = "/smashingmag"
+to = "https://www.smashingmagazine.com/author/shedrack-akintayo/"
+status = 301
+force = true
+[[redirects]]
+from = "/telegram"
+to = "https://t.me/Nagato_Pain"
+status = 301
+force = true
