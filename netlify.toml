@@ -6,7 +6,7 @@
   YARN_FLAGS = "--no-ignore-optional"
 [[redirects]]
 from = "/github"
-to = "https://gihub.com/hacktivist123"
+to = "https://github.com/hacktivist123"
 status = 301
 force = true
 [[redirects]]
