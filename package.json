@@ -40,7 +40,7 @@
     "classnames": "^2.2.6",
     "codecov": "^3.6.5",
     "gatsby": "^2.20.12",
-    "gatsby-cli": "^2.12.34",
+    "gatsby-cli": "^2.12.35",
     "gatsby-link": "^2.3.2",
     "gatsby-plugin-catch-links": "^2.2.1",
     "gatsby-plugin-feed": "^2.4.1",

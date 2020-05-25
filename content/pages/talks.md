@@ -8,6 +8,8 @@ socialImage: ''
 
 Want me to speak at your event? Reach out to me via email or twitter. My social links are available on the sidebar 😄
 
+---
+
 ## Past Talks 🗣🗣
 
 Below is a table containing talks I've delivered in the past. Slides to all of the talks below can be found on [Speaker Deck](https://speakerdeck.com/hacktivist123) 😇.
