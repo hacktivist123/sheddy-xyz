@@ -29,3 +29,8 @@ from = "/telegram"
 to = "https://t.me/Nagato_Pain"
 status = 301
 force = true
+[[redirects]]
+from = "/streaming"
+to = "https://twitch.tv/coder_blvck"
+status = 301
+force = true
