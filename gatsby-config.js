@@ -203,6 +203,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://sheddy.xyz',
+        stripQueryString: true,
+      },
+    },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
   ],
