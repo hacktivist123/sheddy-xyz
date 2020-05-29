@@ -228,7 +228,7 @@ npx create-react-app my-app
 
 (This is the most recommended way to using create-react-app)
 
-[npm](npmjs.org):
+[npm](https://npmjs.org):
 
 ```js
 npm react-app my-app
