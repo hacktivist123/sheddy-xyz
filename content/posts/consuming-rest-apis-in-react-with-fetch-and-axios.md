@@ -4,7 +4,7 @@ title: Consuming REST APIs in React With Fetch and Axios
 slug: consuming-rest-apis-in-react
 draft: true
 date: 2020-06-04T21:19:07.221Z
-description: 'In this tutorial, we are going to learn about how to consume REST APIs in React using the fetch API and the Axios client. In the process, we will also build a simple react applications that is consuming an API. At the end of this tutorial, the readers would understand what a REST API is and how to consume them in React with the best practices'.
+description: 'In this tutorial, we are going to learn about how to consume REST APIs in React using the fetch API and the Axios client. In the process, we will also build a simple react applications that is consuming an API. At the end of this tutorial, the readers would understand what a REST API is and how to consume them in React with the best practices.'
 category: react
 tags:
   - react
