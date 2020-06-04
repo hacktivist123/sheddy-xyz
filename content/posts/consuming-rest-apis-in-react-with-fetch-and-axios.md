@@ -11,6 +11,7 @@ tags:
   - APIS
   - Web Development
 ---
+This article was originally published by myself on [Smashing Magazine](https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/)
 
 ## Quick Summary
 
