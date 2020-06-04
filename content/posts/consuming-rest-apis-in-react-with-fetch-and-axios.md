@@ -2,13 +2,14 @@
 template: post
 title: Consuming REST APIs in React With Fetch and Axios
 slug: consuming-rest-apis-in-react
-draft: true
+draft: false
 date: 2020-06-04T21:19:07.221Z
 description: 'In this tutorial, we are going to learn about how to consume REST APIs in React using the fetch API and the Axios client. In the process, we will also build a simple react applications that is consuming an API. At the end of this tutorial, the readers would understand what a REST API is and how to consume them in React with the best practices.'
-category: react
+category: React
 tags:
-  - react
-  - apis
+  - React
+  - APIS
+  - Web Development
 ---
 
 ## Quick Summary
@@ -19,8 +20,8 @@ In this tutorial, we are going to learn about how to consume REST APIs in React 
 
 Consuming REST APIs in a React Application can be done in various ways but in this tutorial, we will be discussing how we can consume REST APIs using the most popular methods. These popular methods includes:
 
-    - A Promise-Based HTTP client called Axios.
-    - A browser in-built Web API called Fetch API.
+- A Promise-Based HTTP client called Axios.
+- A browser in-built Web API called Fetch API.
 
 We will be discussing and implementing each of the above methods in-depth and show the cool features each of the methods possess.
 
@@ -47,52 +48,52 @@ A [REST API](https://www.smashingmagazine.com/2018/01/understanding-using-rest-a
 
 The way a REST API is structured depends on the product it’s been made for but the rules of REST must be followed, the sample response below is from the [Github Open API](https://developer.github.com/v3) and we’ll be using this API to build a React app later in this tutorial.
 
-```jsx
-    {
-    "login": "hacktivist123",
-    "id": 26572907,
-    "node_id": "MDQ6VXNlcjI2NTcyOTA3",
-    "avatar_url": "https://avatars3.githubusercontent.com/u/26572907?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/hacktivist123",
-    "html_url": "https://github.com/hacktivist123",
-    "followers_url": "https://api.github.com/users/hacktivist123/followers",
-    "following_url": "https://api.github.com/users/hacktivist123/following{/other_user}",
-    "gists_url": "https://api.github.com/users/hacktivist123/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/hacktivist123/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/hacktivist123/subscriptions",
-    "organizations_url": "https://api.github.com/users/hacktivist123/orgs",
-    "repos_url": "https://api.github.com/users/hacktivist123/repos",
-    "events_url": "https://api.github.com/users/hacktivist123/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/hacktivist123/received_events",
-    "type": "User",
-    "site_admin": false,
-    "name": "Shedrack akintayo",
-    "company": null,
-    "blog": "https://sheddy.xyz",
-    "location": "Lagos, Nigeria ",
-    "email": null,
-    "hireable": true,
-    "bio": "☕ Software Engineer | | Developer Advocate🥑|| ❤ Everything JavaScript",
-    "public_repos": 68,
-    "public_gists": 1,
-    "followers": 130,
-    "following": 246,
-    "created_at": "2017-03-21T12:55:48Z",
-    "updated_at": "2020-05-11T13:02:57Z"
-    }
+```json
+{
+  "login": "hacktivist123",
+  "id": 26572907,
+  "node_id": "MDQ6VXNlcjI2NTcyOTA3",
+  "avatar_url": "https://avatars3.githubusercontent.com/u/26572907?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/hacktivist123",
+  "html_url": "https://github.com/hacktivist123",
+  "followers_url": "https://api.github.com/users/hacktivist123/followers",
+  "following_url": "https://api.github.com/users/hacktivist123/following{/other_user}",
+  "gists_url": "https://api.github.com/users/hacktivist123/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/hacktivist123/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/hacktivist123/subscriptions",
+  "organizations_url": "https://api.github.com/users/hacktivist123/orgs",
+  "repos_url": "https://api.github.com/users/hacktivist123/repos",
+  "events_url": "https://api.github.com/users/hacktivist123/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/hacktivist123/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Shedrack akintayo",
+  "company": null,
+  "blog": "https://sheddy.xyz",
+  "location": "Lagos, Nigeria ",
+  "email": null,
+  "hireable": true,
+  "bio": "☕ Software Engineer | | Developer Advocate🥑|| ❤ Everything JavaScript",
+  "public_repos": 68,
+  "public_gists": 1,
+  "followers": 130,
+  "following": 246,
+  "created_at": "2017-03-21T12:55:48Z",
+  "updated_at": "2020-05-11T13:02:57Z"
+}
 ```
 
-The response above is from the Github REST API when I make a `GET` request to the following endpoint `https://api.github.com/users/hacktivist123` , it returns all the stored data about a user called **hacktivist123.** With this response, we can decide to render it however we like in our React app.
+The response above is from the Github REST API when I make a `GET` request to the following endpoint https://api.github.com/users/hacktivist123 , it returns all the stored data about a user called **hacktivist123.** With this response, we can decide to render it however we like in our React app.
 
 ## Consuming APIs using the Fetch API
 
-The `fetch()` API is an inbuilt javascript method for getting resources from a server or an API endpoint. It’s similar to `[XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)`, but the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) provides a more powerful and flexible feature set.
+The `fetch()` API is an inbuilt javascript method for getting resources from a server or an API endpoint. It’s similar to [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), but the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) provides a more powerful and flexible feature set.
 It defines concepts such as [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) and the [HTTP Origin header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) semantics, supplanting their separate definitions elsewhere.
 The `fetch()` \***\*API \*\***method always takes in a compulsory argument, which is the path or URL to the resource you want to fetch. It returns a promise that points to the response from the request, whether the request is successful or not. You can also optionally pass in an init options object as the second argument.
 Once a response has been fetched, there are several inbuilt methods available to define what the body content is and how it should be handled.
 
-**Difference between the Fetch API and** [**jQuery Ajax**](https://api.jquery.com/jquery.ajax/)
+**Difference between the Fetch API and** [jQuery Ajax](https://api.jquery.com/jquery.ajax/)
 The Fetch API is different from jQuery Ajax in three main ways, which are:
 
 - The promise returned from a `fetch()` request will not reject when there's an HTTP error, no matter the nature of the response status. Instead, it will resolve the request normally, if the response status code is a 400 or 500 type code, it’ll set the ok status. A request will only be rejected either because of network failure or if something is preventing the request from completing
@@ -125,9 +126,9 @@ The response is just a regular HTTP response and not the actual JSON. In other t
 
 **Using Fetch API in React Apps**
 Using the Fetch API in React Apps is the normal way we’d use the Fetch API in javascript, there is no change in syntax, the only issue is deciding where to make the fetch request in our React App. Most fetch requests or any HTTP request of any sort is usually done in a React Component.
-This request can either be made inside a [Lifecycle Method](https://reactjs.org/docs/react-component.html#the-component-lifecycle) if your component is a Class Component or inside a `[useEffect()](https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/)` [React Hook](https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/) if your component is a Functional Component.
+This request can either be made inside a [Lifecycle Method](https://reactjs.org/docs/react-component.html#the-component-lifecycle) if your component is a Class Component or inside a [useEffect()](https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/) [React Hook](https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/) if your component is a Functional Component.
 
-For example, In the code below, we will make a fetch request inside a class component,awhich means we’ll have to do it inside a lifecycle method. In this particular case, our fetch request will be made inside a `componentDidMount` lifecycle method because we want to make the request just after our React Component has mounted.
+For example, In the code below, we will make a fetch request inside a class component,awhich means we’ll have to do it inside a lifecycle method. In this particular case, our fetch request will be made inside a `componentDidMount()` lifecycle method because we want to make the request just after our React Component has mounted.
 
 ```jsx
 import React from 'react';
@@ -155,13 +156,19 @@ The `fetch()` method takes in the path to the resource we want to fetch, which i
 In this section, we will be building a simple react application that consumes an external API, we will be using the Fetch method to consume the API.
 The simple application will display all the repositories and their description that belongs to a particular user. For this tutorial, I’ll be using my GitHub username, you can also use yours if you wish.
 
-The first thing we need to do is to generate our React App by using `create-react-app`
+The first thing we need to do is to generate our React App by using **create-react-app**
 
-`npx create-react-app myRepos`
+```js
+
+npx create-react-app myRepos
+
+```
 
 The command above will bootstrap a new react app for us. After our new react app has been created all we need to is run the following command and begin coding
 
-`npm start`
+```js
+npm start
+```
 
 If our React is created properly we should see this in our browser window when we navigate to `localhost:3000` after running the above command
 
@@ -432,15 +439,13 @@ So now our App should look like this after we’ve applied our styling:
 
 ![Styled App](https://paper-attachments.dropbox.com/s_AFA8A5FDFCE734B5E1A7E082C10F23D7A49D1869105006FCA4EDEA2BFC55E3D0_1589810000399_Screenshot+2020-05-18+at+13.58.55.png)
 
-Now our App looks much better. 😊
-
 So that’s how we can use the Fetch API to consume a REST API. In the next section, we’ll be discussing Axios and how we can use it to consume the same API in the same App.
 
 ## Consuming APIs with Axios
 
 Axios is an easy to use promise-based HTTP client for the browser and node.js. Since Axios is promise-based, we can take advantage of async and await for more readable and asynchronous code. With Axios, we get the ability to intercept and cancel request, it also has a built-in feature that provides client-side protection against cross-site request forgery.
 
-### Features of Axios\*\*
+### Features of Axios
 
 - Request and response interception
 - Streamlined error handling
@@ -451,7 +456,8 @@ Axios is an easy to use promise-based HTTP client for the browser and node.js. S
 - Support for older browsers
 - Automatic JSON data transformation
 
-**Making Requests with Axios**
+### Making Requests with Axios
+
 Making HTTP Requests with axios is quite easy, the code below is basically how to make an HTTP request with axios.
 
 ```js
@@ -529,13 +535,13 @@ Now let’s install Axios in our React App by running either of the following
 with npm
 
 ```js
-    npm install axios
+npm install axios
 ```
 
 with yarn
 
 ```js
-    yarn add axios
+yarn add axios
 ```
 
 After installation is complete, we have to import axios into our App.js. In our App.js we’ll add the following line to the top of our App.js file:
