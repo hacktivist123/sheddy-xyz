@@ -22,8 +22,8 @@ In this tutorial, we are going to learn about how to consume REST APIs in React 
 
 Consuming REST APIs in a React Application can be done in various ways but in this tutorial, we will be discussing how we can consume REST APIs using the most popular methods. These popular methods includes:
 
-    - A Promise-Based HTTP client called **Axios.**
-    - A browser in-built Web API called **Fetch API**.
+    - A Promise-Based HTTP client called Axios.
+    - A browser in-built Web API called Fetch API.
 
 We will be discussing and implementing each of the above methods in-depth and show the cool features each of the methods possess. 
 
