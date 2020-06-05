@@ -345,7 +345,7 @@ useEffect(() => {
 ```
 
 Here, we are initializing a `useEffect()` React Hook. In the `useEffect()` hook, we are setting our initial loading state to true, while this is true, our higher-order component will display a message.
-We are then creating a constant variable called `user` and assigning the API URL we’ll be getting the repositories data from.
+We are then creating a constant variable called `apiUrl` and assigning the API URL we’ll be getting the repositories data from.
 
 We are then making a basic `fetch()` request like we discussed above and then after the request is done we are setting the app loading state to false and populating the repos state with the data we got from the request.
 
