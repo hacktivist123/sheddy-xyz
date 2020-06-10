@@ -1,6 +1,6 @@
 ---
 title: Higher Order Components in React
-date: '2020-05-04'
+date: '2020-06-10'
 template: 'post'
 draft: false
 slug: 'higher-order-components-in-react'
@@ -14,6 +14,8 @@ description: 'React is a fantastic Javascript library for building rich user int
 ---
 
 ## Quick Summary
+
+This article was originally published by myself and it is more up to date on [Smashing Magazine](https://www.smashingmagazine.com/2020/06/rest-api-react-fetch-axios/)
 
 In this tutorial, we are going to learn what higher-order components are, the syntax of a higher order component as well as use cases for them. In the process, we will also build an example higher order component out of an existing React component. At the end of this tutorial, the readers would understand all the basics of what Higher-Order Components are and how to build them.
 
