@@ -2,7 +2,7 @@
 title: Higher Order Components in React
 date: '2020-05-04'
 template: 'post'
-draft: true
+draft: false
 slug: 'higher-order-components-in-react'
 category: 'React'
 tags:
@@ -12,8 +12,6 @@ tags:
 
 description: 'React is a fantastic Javascript library for building rich user interfaces, it provides a great component abstraction for organising your interfaces into well-functioning code but what about the look and feel of the app? In the browser, the look and feel of the app are mostly defined by CSS which is a means of styling our web applications and websites. There are various ways of styling React components from using stylesheets to using external styling libraries etc.'
 ---
-
-This article was originally published by myself on [Smashing Magazine](https://sheddy.xyz)
 
 ## Quick Summary
 
@@ -112,7 +110,7 @@ In this section of this tutorial, we will be building a higher-order component t
 So generate a new react app with `create-react-app` like so:
 
 ```bash
-    npx create-react-app my-app
+npx create-react-app my-app
 ```
 
 After generating a new React app, replace the code in your `index.js` with the following code snippet.
