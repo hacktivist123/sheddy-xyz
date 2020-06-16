@@ -3,14 +3,14 @@ template: post
 title: Build a Slack Bot with n8n Webhooks node and Github API
 slug: slack-bot-with-n8n-webhooks
 draft: false
-date: '2020-06-20T14:52:21.155Z'
+date: '2020-06-16T14:52:21.155Z'
 category: Automation
 tags:
   - API
   - Workflow
   - Automation
   - Javascript
-description: 'When React 16.8 was released officially in early February 2019, it shipped with an additional API that lets you use state and other features in React without writing a class. This additional API is called Hooks and they’re becoming popular in the React ecosystem, from open sourced projects to being used in production applications.'
+description: 'n8n is a free and open fair-code licensed node-based workflow automation tool, the main aim of n8n is to allow people automate processes with little or no-code. With n8n you can build a lot of interesting workflows and automate a lot of processes from event registrations, to sharing updates when an event happens etc.'
 ---
 ## Introduction
 
@@ -18,7 +18,7 @@ We humans enjoy automating processes a lot and we try to do it as much we possib
 
 I enjoy automating stuff too and I recently discovered a really interesting workflow automation tool called [n8n](https://n8n.io/) (pronounced nodemation). 
 
-**[n8n](http://n8n.io)** is a free and open fair-code licensed node-based workflow automation tool, the main aim of n8n is to allow people automate processes with little or no-code,
+**[n8n](http://n8n.io)** is a free and open fair-code licensed node-based workflow automation tool, the main aim of n8n is to allow people automate processes with little or no-code.
 
 With **n8n** you can build a lot of interesting workflows and automate a lot of processes from event registrations, to sharing updates when an event happens etc. Just by checking the [integrations](https://n8n.io/integrations) page of n8n, you would see a growing number of third party APIs available for you to use.
 

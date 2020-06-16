@@ -1,6 +1,6 @@
 ---
 title: 'Javascript Build Tools: Past and Beyond'
-date: '2020-06-19'
+date: '2020-06-16'
 template: 'post'
 draft: false
 slug: 'javascript-build-tools-past-and-beyond'
@@ -145,6 +145,9 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 ### Future of Rollup:
 
 Rollup is super cool and it is being adopted rapidly. It has super cool features and it is going to be in frontend tooling ecosystem for a long time.
+
+## Snowpack
+
 
 ## Conclusion
 
