@@ -2,25 +2,19 @@
 template: post
 title: Build a Slack Bot with n8n Webhooks node and Github API
 slug: slack-bot-with-n8n-webhooks
-draft: true
-date: 2020-06-16T14:52:21.155Z
-description: >-
-  n8n is a free and open fair-code licensed node-based workflow automation tool,
-  the main aim of n8n is to allow people automate processes with little or
-  no-code,
-
-
-  With n8n you can build a lot of interesting workflows and automate a lot of processes from event registrations, to sharing updates when an event happens etc. Just by checking the integrations page of n8n, you would see a growing number of third party APIs available for you to use.
+draft: false
+date: '2020-06-20T14:52:21.155Z'
 category: Automation
 tags:
   - API
   - Workflow
   - Automation
   - Javascript
+description: 'When React 16.8 was released officially in early February 2019, it shipped with an additional API that lets you use state and other features in React without writing a class. This additional API is called Hooks and they’re becoming popular in the React ecosystem, from open sourced projects to being used in production applications.'
 ---
 ## Introduction
 
-We humans enjoy automating processes a lot and we try to do it as much we possibly can, basically because it saves a lot of time and it’s actually pretty cool 😄. 
+We humans enjoy automating processes a lot and we try to do it as much we possibly can, basically because it saves a lot of time and it’s actually pretty cool. 
 
 I enjoy automating stuff too and I recently discovered a really interesting workflow automation tool called [n8n](https://n8n.io/) (pronounced nodemation). 
 
@@ -30,7 +24,7 @@ With **n8n** you can build a lot of interesting workflows and automate a lot of 
 
 In other to demonstrate how cool **n8n(nodemation)** is, we will building a slack bot that allows us get certain details of a particular user through their github username. Our slack bot is going to have a [slash command](https://api.slack.com/interactivity/slash-commands) which we will call then followed by the user’s github username we want to get their details.
 
-## **Prerequisites**
+### Prerequisites
 
 * You need to have [Node.js](https://nodejs.org/en/) installed.
 * You need to have [npm](https://www.npmjs.com/get-npm) installed.

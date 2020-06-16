@@ -1,6 +1,6 @@
 ---
 title: 'Javascript Build Tools: Past and Beyond'
-date: '2020-06-20'
+date: '2020-06-19'
 template: 'post'
 draft: false
 slug: 'javascript-build-tools-past-and-beyond'
