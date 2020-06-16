@@ -146,8 +146,6 @@ Rollup is a module bundler for JavaScript which compiles small pieces of code in
 
 Rollup is super cool and it is being adopted rapidly. It has super cool features and it is going to be in frontend tooling ecosystem for a long time.
 
-## Snowpack
-
 
 ## Conclusion
 
