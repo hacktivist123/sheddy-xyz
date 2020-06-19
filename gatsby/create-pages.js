@@ -18,21 +18,19 @@ const createPages = async ({ graphql, actions }) => {
   // Tags list
   createPage({
     path: '/tags',
-    component: path.resolve('./src/templates/tags-list-template.js')
+    component: path.resolve('./src/templates/tags-list-template.js'),
   });
 
   // Categories list
   createPage({
     path: '/categories',
-    component: path.resolve('./src/templates/categories-list-template.js')
+    component: path.resolve('./src/templates/categories-list-template.js'),
   });
 
   // Posts and pages from markdown
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        filter: { frontmatter: { draft: { ne: true } } }
-      ) {
+      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
         edges {
           node {
             frontmatter {
@@ -54,13 +52,13 @@ const createPages = async ({ graphql, actions }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/page-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: { slug: edge.node.fields.slug },
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: { slug: edge.node.fields.slug },
       });
     }
   });
@@ -70,6 +68,5 @@ const createPages = async ({ graphql, actions }) => {
   await createCategoriesPages(graphql, actions);
   await createPostsPages(graphql, actions);
 };
-
 
 module.exports = createPages;

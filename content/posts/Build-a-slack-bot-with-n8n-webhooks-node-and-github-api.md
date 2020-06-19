@@ -12,11 +12,12 @@ tags:
   - Javascript
 description: 'n8n is a free and open fair-code licensed node-based workflow automation tool, the main aim of n8n is to allow people automate processes with little or no-code. With n8n you can build a lot of interesting workflows and automate a lot of processes from event registrations, to sharing updates when an event happens etc.'
 ---
+
 ## Introduction
 
-We humans enjoy automating processes a lot and we try to do it as much we possibly can, basically because it saves a lot of time and it’s actually pretty cool. 
+We humans enjoy automating processes a lot and we try to do it as much we possibly can, basically because it saves a lot of time and it’s actually pretty cool.
 
-I enjoy automating stuff too and I recently discovered a really interesting workflow automation tool called [n8n](https://n8n.io/) (pronounced nodemation). 
+I enjoy automating stuff too and I recently discovered a really interesting workflow automation tool called [n8n](https://n8n.io/) (pronounced nodemation).
 
 **[n8n](http://n8n.io)** is a free and open fair-code licensed node-based workflow automation tool, the main aim of n8n is to allow people automate processes with little or no-code.
 
@@ -26,9 +27,9 @@ In other to demonstrate how cool **n8n(nodemation)** is, we will building a slac
 
 ### Prerequisites
 
-* You need to have [Node.js](https://nodejs.org/en/) installed.
-* You need to have [npm](https://www.npmjs.com/get-npm) installed.
-* You need to setup [n8n](https://docs.n8n.io/#/setup).
+- You need to have [Node.js](https://nodejs.org/en/) installed.
+- You need to have [npm](https://www.npmjs.com/get-npm) installed.
+- You need to setup [n8n](https://docs.n8n.io/#/setup).
 
 ## Setup
 
@@ -67,9 +68,9 @@ or
 n8n --tunnel
 ```
 
-Either of the above will immediately start up the n8n server and you can then open n8n in your browser by either clicking the letter o or navigating to [localhost:5678](http://localhost:5678). Adding ```--``tunnel``` is useful for using webhooks for trigger nodes of external services like GitHub etc, it exposes n8n to the web.
+Either of the above will immediately start up the n8n server and you can then open n8n in your browser by either clicking the letter o or navigating to [localhost:5678](http://localhost:5678). Adding `--tunnel` is useful for using webhooks for trigger nodes of external services like GitHub etc, it exposes n8n to the web.
 
-If you went with option two or three, you can access **n8n** in your browser by just navigating to [localhost:5678](http://localhost:5678). 
+If you went with option two or three, you can access **n8n** in your browser by just navigating to [localhost:5678](http://localhost:5678).
 
 **Note**: using `n8n --tunnel` is only meant for local development and testing. It should not be used in production!
 
@@ -83,22 +84,22 @@ The above user interface is called the n8n user interface, this is where all the
 
 There are certain keywords that will be used in this article as we move forward so I’ll like to talk about them briefly.
 
-* **Node**: A node is an entry point for getting data, it could also be a function to process data or an exit for sending data. You can connect multiple nodes, which allows you to create simple and complex workflows. Nodes for external services like Slack, Github, etc are available for users.
-* **Connection:** A connection is a link that connects nodes together, it also the passage of data from one node to another. With a connection, a single node can be connected to several other nodes.
-* **Trigger Node**: A trigger node is that is meant to trigger an action or event as the name implies. They usually start a workflow and also provide the initial data to the workflow. 
-* **Workflow**: A Workflow consists of a collection of nodes, trigger nodes that are connected to each other. It is the entire process combined and it ends only when all active and connected nodes have processed their data or an error occurs with one of the nodes.
+- **Node**: A node is an entry point for getting data, it could also be a function to process data or an exit for sending data. You can connect multiple nodes, which allows you to create simple and complex workflows. Nodes for external services like Slack, Github, etc are available for users.
+- **Connection:** A connection is a link that connects nodes together, it also the passage of data from one node to another. With a connection, a single node can be connected to several other nodes.
+- **Trigger Node**: A trigger node is that is meant to trigger an action or event as the name implies. They usually start a workflow and also provide the initial data to the workflow.
+- **Workflow**: A Workflow consists of a collection of nodes, trigger nodes that are connected to each other. It is the entire process combined and it ends only when all active and connected nodes have processed their data or an error occurs with one of the nodes.
 
 ## Building a Slack Bot with n8n
 
-Now that we have setup n8n and we also understand the important keywords in the n8n community, let’s move forward to build a slack bot that will have a [slash command](https://api.slack.com/interactivity/slash-commands) which we will call then followed by the user’s GitHub username we want to get their details, the slack bot will make an HTTP request to the GitHub users open API courtesy of an HTTP Request n8n trigger node and then return to slack certain details we will specify via another n8n node.  
+Now that we have setup n8n and we also understand the important keywords in the n8n community, let’s move forward to build a slack bot that will have a [slash command](https://api.slack.com/interactivity/slash-commands) which we will call then followed by the user’s GitHub username we want to get their details, the slack bot will make an HTTP request to the GitHub users open API courtesy of an HTTP Request n8n trigger node and then return to slack certain details we will specify via another n8n node.
 
-The first thing we will need to do is add a webhook trigger node, a webhook node will allow us to send automated messages from applications like slack, etc. This webhook node will be our trigger node and the workflow will only start if our webhook node runs successfully. To create a workflow node, click on the + button on the top right. Select the ‘Webhook’ node under the ‘Triggers’ section. This adds a new Webhook node. 
+The first thing we will need to do is add a webhook trigger node, a webhook node will allow us to send automated messages from applications like slack, etc. This webhook node will be our trigger node and the workflow will only start if our webhook node runs successfully. To create a workflow node, click on the + button on the top right. Select the ‘Webhook’ node under the ‘Triggers’ section. This adds a new Webhook node.
 
 Here’s a visual demonstration of adding the webhook trigger node:
 
 ![Adding WebHook Node](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591933507439_add-webhook.gif)
 
-After adding the webhook node, we need to fill in certain details into the node like the HTTP Method type, we need to select POST since we’ll POST a message to the webhook link and also we need to copy the webhook URL since that is what we’ll be using as the request URL for the slash command of our slack bot. 
+After adding the webhook node, we need to fill in certain details into the node like the HTTP Method type, we need to select POST since we’ll POST a message to the webhook link and also we need to copy the webhook URL since that is what we’ll be using as the request URL for the slash command of our slack bot.
 
 Here’s a visual demonstration of me carrying out the process:
 
@@ -106,17 +107,17 @@ Here’s a visual demonstration of me carrying out the process:
 
 make sure to copy the test URL because we are still in test mode and it is essential for getting the data we need from the payload.
 
-**Note**: The webhook path must be slack/events when creating a slack-bot, this is for the slack API to recognize the webhook as an event just like *[*event subscriptions*](https://api.slack.com/events-api)* in the slack API.* 
+**Note**: The webhook path must be **_slack/events_** when creating a slack-bot, this is for the slack API to recognize the webhook as an event just like [_event subscriptions_](https://api.slack.com/events-api) in the slack API.
 
-**Creating the Slack Bot on Slack API page** We will now proceed to create our new slack bot, in other to do that we would have to visit the [Slack Apps](https://api.slack.com/apps) [](https://api.slack.com/apps?new_app=1)web page, then go ahead to click on the new app button, fill in the required details and create the new app. 
+**Creating the Slack Bot on Slack API page** We will now proceed to create our new slack bot, in other to do that we would have to visit the [Slack Apps](https://api.slack.com/apps) [](https://api.slack.com/apps?new_app=1)web page, then go ahead to click on the new app button, fill in the required details and create the new app.
 
-**Note**: Slack Bot are called Slack Apps.*
+**Note**: _Slack Bot are called Slack Apps._
 
 Here is a visual demonstration of the process:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591935741481_Create-Slack-App.gif)
 
-You can name your slack app whatever you wish to and you also have to choose the slack workspace that will be used for testing and developing the slack-bot. After creating your App, you should have access to the development dashboard for the app where you can add slash commands, install the app in a workspace and also read the documentation about certain slack bot features. 
+You can name your slack app whatever you wish to and you also have to choose the slack workspace that will be used for testing and developing the slack-bot. After creating your App, you should have access to the development dashboard for the app where you can add slash commands, install the app in a workspace and also read the documentation about certain slack bot features.
 
 Here is a photo of how the slack bot development dashboard looks like:
 
@@ -124,7 +125,7 @@ Here is a photo of how the slack bot development dashboard looks like:
 
 I labeled all the important menus and sections that we will be making use of in this tutorial, for ease of use and to guide us visually.
 
-Next, we need to scroll down and give our app description, and also a background color then click on save changes. This is just for users to know what our app is meant to do. 
+Next, we need to scroll down and give our app description, and also a background color then click on save changes. This is just for users to know what our app is meant to do.
 
 Here is a visual demonstration of the process:
 
@@ -132,11 +133,11 @@ Here is a visual demonstration of the process:
 
 After doing the above, we need to add Token Scopes to our bot by navigating to the **Oauth and Permissions** menu in the sidebar, it is under the **Features** section. Token Scopes gives our bot permissions to carry out certain actions we specify. For this particular bot we need the following token scopes:
 
-* **channels:join** - Allows our bot to join public channels in the workspace
-* **chat:write** - Allows our bot to send messages
-* **commands** - Allows our bot to add shortcuts and slash commands people can use
-* **links:write** - Allow our bot to preview URLs
-* **incoming:webhook** - Allows our bot to post messages to specific channels.
+- **channels:join** - Allows our bot to join public channels in the workspace
+- **chat:write** - Allows our bot to send messages
+- **commands** - Allows our bot to add shortcuts and slash commands people can use
+- **links:write** - Allow our bot to preview URLs
+- **incoming:webhook** - Allows our bot to post messages to specific channels.
 
 Here is a visual demonstration of the process:
 
@@ -144,10 +145,10 @@ Here is a visual demonstration of the process:
 
 After doing that we need to create our slash command, we need our slash command to send commands to slack and our webhook. we can do this by clicking on the slash command menu and when it loads click on **Create New Command,** after that, we’ll be required to fill in some input fields, here is a breakdown of what needs to be in the input fields:
 
-* **Command** **\-** This should contain the command you would like to use.
-* **Request URL** **\-** This should contain the URL where the slack API will post the details of the slash command when we use it. In our case, the request URL is the **test webhook URL** we grabbed from the **webhook trigger node** we created earlier on.
-* **Short Description -** This should contain a very short description of how to slash command should do
-* **Usage Hint -** This should contain a very short text on how to use the slash command.
+- **Command** **\-** This should contain the command you would like to use.
+- **Request URL** **\-** This should contain the URL where the slack API will post the details of the slash command when we use it. In our case, the request URL is the **test webhook URL** we grabbed from the **webhook trigger node** we created earlier on.
+- **Short Description -** This should contain a very short description of how to slash command should do
+- **Usage Hint -** This should contain a very short text on how to use the slash command.
 
 Here is a visual demonstration of the process:
 
@@ -165,7 +166,7 @@ After creating the slack bot/app, we have to go back to our n8n workflow and beg
 4. **Set** Node to filter the API responses for the data we need
 5. **Slack** Node to send the user details back to slack
 
-**Webhook Node and HTTP Request Nodes**
+## Webhook Node and HTTP Request Nodes
 
 For this workflow, we will be making two HTTP requests with a value from the webhook node, the first one is for grabbing details from the user profile which is `https://api.github.com/users/<username>/` and the second one is to grab an email associated to the user via the user public commits which is `https://api.github.com/users/<username>/events/public`.
 
@@ -173,7 +174,7 @@ The HTTP Request node will allow us to make an HTTP Request to an API endpoint a
 
 Now when we go to our slack workspace and make a command /gitails <username>, this will send a post a request to our webhook and this API response will be returned and it’s from this API response in our webhook node we’ll grab the GitHub username and make the request in our HTTP Nodes
 
-The following response will be returned to our webhook node when I go to slack and type “/gitails hacktivist123” in the message field. 
+The following response will be returned to our webhook node when I go to slack and type “/gitails hacktivist123” in the message field.
 
 ![Webhook Response](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592018038983_Screenshot+2020-06-13+at+04.12.35.png)
 
@@ -211,7 +212,7 @@ The Function Item Node allows us to write a custom javascript code that gets exe
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592020300284_function-item-node.gif)
 
-In this workflow, we want to grab an email from the API response of the previous node. We are going to write a javascript expression that will grab **penultimate** object in the array of objects and returning the **payload** property in it that contains an email address. All we need to do is to paste the code below into the text area in the function node and execute the node. 
+In this workflow, we want to grab an email from the API response of the previous node. We are going to write a javascript expression that will grab **penultimate** object in the array of objects and returning the **payload** property in it that contains an email address. All we need to do is to paste the code below into the text area in the function node and execute the node.
 
 ```
 return item[item.length-3].payload
@@ -225,17 +226,17 @@ So we have grabbed what we need, what we need to do now is to grab the data requ
 
 **Set Node**
 
-We need a set node for the next process because a set node-set values on items and also removes values too. So we can create a set node through the normal process of clicking on the + button on the top right of the n8n UI. In the node configuration view search for ‘Set’ click on it, it will be created.  Now click on the set node, in the set node we need to set values by clicking on the add value button when you do it’ll tell you to choose if it is a string, number, or boolean. For this tutorial, all values will be strings Make sure to use any of the two HTTP Request nodes to fill up the value field of each of the values we are setting. Now set the following values:
+We need a set node for the next process because a set node-set values on items and also removes values too. So we can create a set node through the normal process of clicking on the + button on the top right of the n8n UI. In the node configuration view search for ‘Set’ click on it, it will be created. Now click on the set node, in the set node we need to set values by clicking on the add value button when you do it’ll tell you to choose if it is a string, number, or boolean. For this tutorial, all values will be strings Make sure to use any of the two HTTP Request nodes to fill up the value field of each of the values we are setting. Now set the following values:
 
-* **login** - user’s username. This can be gotten from the first HTTP Request node by adding it as an expression.
-* **name -** user’s full name. This can be gotten from the first HTTP Request node by adding it as an expression.
-* **email -** any email address associated with the user**.** This can be gotten from the second HTTP Request node by adding it as an expression.
-* **company** - user’s company if there’s any. This can be gotten from the first HTTP Request node by adding it as an expression.
-* **location** - user’s location. This can be gotten from the first HTTP Request node by adding it as an expression.
-* **photo -** user’s profile photo. This can be gotten from the first HTTP Request node by adding it as an expression.
-* **profile created at** - This is when the user’s profile was created This can be gotten from the first HTTP Request node by adding it as an expression.
+- **login** - user’s username. This can be gotten from the first HTTP Request node by adding it as an expression.
+- **name -** user’s full name. This can be gotten from the first HTTP Request node by adding it as an expression.
+- **email -** any email address associated with the user**.** This can be gotten from the second HTTP Request node by adding it as an expression.
+- **company** - user’s company if there’s any. This can be gotten from the first HTTP Request node by adding it as an expression.
+- **location** - user’s location. This can be gotten from the first HTTP Request node by adding it as an expression.
+- **photo -** user’s profile photo. This can be gotten from the first HTTP Request node by adding it as an expression.
+- **profile created at** - This is when the user’s profile was created This can be gotten from the first HTTP Request node by adding it as an expression.
 
-If everything is done correctly, your Set node should look like this: 
+If everything is done correctly, your Set node should look like this:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592021537726_Set.gif)
 
@@ -243,7 +244,7 @@ When we trigger the workflow, we should see the following returned:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592022354586_Screenshot+2020-06-13+at+05.25.40.png)
 
-***Note:*** *Not every field will have a value returned because some users might not supply these data or the data isn’t just available.*
+**_Note:_** _Not every field will have a value returned because some users might not supply these data or the data isn’t just available._
 
 After that has been done, our workflow should now look like this, and sending that data to slack is the last process in our workflow.
 
@@ -257,7 +258,7 @@ Here is a photo of where our slack access token can be found:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592022943821_Screenshot+2020-06-13+at+05.32.59.png)
 
-Now create a slack node and then Add the access token in the slack node.  Here is a visual demonstration: 
+Now create a slack node and then Add the access token in the slack node. Here is a visual demonstration:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592024291988_Slack+API.gif)
 
@@ -276,7 +277,7 @@ I found the following details for this username:
 *Profile Created at:* {{$node["Set"].json["profile created at"]}}
 ```
 
-Now go ahead to add a color for the message by clicking on the add item button and select color, choose whatever color you like. I ended up choosing #040202 as my preferred color. 
+Now go ahead to add a color for the message by clicking on the add item button and select color, choose whatever color you like. I ended up choosing #040202 as my preferred color.
 
 Also, add a Title for the message by clicking on the add item button and select title, in the title field, choose whatever title you want for the message by click on the gears icon close to the field and then add expression. This is how i structured my title:
 
@@ -302,7 +303,7 @@ Our final workflow should look like this:
 
 Now if you click on ‘Execute Node’, this should send a message to the Slack channel you chose in the slack node.
 
-Now that we are done with our workflow, all we need to do is activate the workflow so that we can see it work without having to click on the execute workflow button all the time. 
+Now that we are done with our workflow, all we need to do is activate the workflow so that we can see it work without having to click on the execute workflow button all the time.
 
 Here is how to activate the workflow:
 
@@ -322,6 +323,6 @@ n8n is a useful tool, imagine the cool workflows one can create. we can create v
 
 ## More Resources
 
-* [Webhooks Fun with Mattermost](https://hackernoon.com/webhooks-fun-with-n8n-and-mattermost-upb53yw0), **Tanay Pant**
-* [Workflow Automation with n8n.io](https://blog.logrocket.com/workflow-automation-with-n8n-io/), **Daniel Phiri** 
-* [n8n official documentation](http://docs.n8n.io), **n8n.io**
+- [Webhooks Fun with Mattermost](https://hackernoon.com/webhooks-fun-with-n8n-and-mattermost-upb53yw0), **Tanay Pant**
+- [Workflow Automation with n8n.io](https://blog.logrocket.com/workflow-automation-with-n8n-io/), **Daniel Phiri**
+- [n8n official documentation](http://docs.n8n.io), **n8n.io**
