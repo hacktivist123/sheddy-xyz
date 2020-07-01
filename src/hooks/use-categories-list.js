@@ -1,5 +1,5 @@
 // @flow strict
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby'
 
 const useCategoriesList = () => {
   const { allMarkdownRemark } = useStaticQuery(
@@ -15,9 +15,9 @@ const useCategoriesList = () => {
         }
       }
     `
-  );
+  )
 
-  return allMarkdownRemark.group;
-};
+  return allMarkdownRemark.group
+}
 
-export default useCategoriesList;
+export default useCategoriesList

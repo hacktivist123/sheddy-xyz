@@ -35,13 +35,13 @@ In other to demonstrate how cool **n8n(nodemation)** is, we will building a slac
 
 Once you have installed or already have nodejs and npm installed, you can move ahead to installing **n8n** by running:
 
-```
+```js
 npm install n8n -g
 ```
 
 This will install n8n globally. If you just want to test it out real quick without installing it at all then you can run the following command:
 
-```
+```js
 npx n8n
 ```
 
@@ -49,7 +49,7 @@ It will download everything that is needed to start **n8n**.
 
 Alternatively, if you are a fan of docker you can also use docker to get started quickly by running this command:
 
-```
+```js
 docker run -it --rm \
   --name n8n \
   -p 5678:5678 \
@@ -58,13 +58,13 @@ docker run -it --rm \
 
 If you used option one you can access **n8n** by running the following command:
 
-```
+```js
 n8n
 ```
 
 or
 
-```
+```js
 n8n --tunnel
 ```
 
@@ -76,7 +76,7 @@ If you went with option two or three, you can access **n8n** in your browser by 
 
 After navigating to [localhost:5678](http://localhost:5678), you will see the following user interface:
 
-![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591931567660_Screenshot+2020-06-12+at+04.12.42.png)
+![User Interface](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591931567660_Screenshot+2020-06-12+at+04.12.42.png)
 
 The above user interface is called the n8n user interface, this is where all the workflow automation process will be done.
 
@@ -115,7 +115,7 @@ make sure to copy the test URL because we are still in test mode and it is essen
 
 Here is a visual demonstration of the process:
 
-![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591935741481_Create-Slack-App.gif)
+![Demonstration](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1591935741481_Create-Slack-App.gif)
 
 You can name your slack app whatever you wish to and you also have to choose the slack workspace that will be used for testing and developing the slack-bot. After creating your App, you should have access to the development dashboard for the app where you can add slash commands, install the app in a workspace and also read the documentation about certain slack bot features.
 
@@ -182,7 +182,7 @@ If you have noticed, this API response is an object and it has a key called text
 
 Now let’s create an HTTP Request node that will make a request with the user details by clicking on the + button on the top right of the n8n UI. In the node configuration view search for ‘HTTP Request’ click on it, it will be created. Now enter the following URL:
 
-```
+```bash
 https://api.github.com/users/<username>/
 ```
 
@@ -206,7 +206,7 @@ So far, our workflow is almost complete and it should look like this:
 
 ![](https://paper-attachments.dropbox.com/s_52381EE565B8B743F3A47A17386F92DAE92763EFD327125AADF5E5E7644F1F29_1592019802740_Screenshot+2020-06-13+at+04.43.16.png)
 
-**Function Item Node**
+### Function Item Node
 
 The Function Item Node allows us to write a custom javascript code that gets executed once per item. the item is the entire result of the from the previous node, we can manipulate this result and transform the data into whatever we want. we can add the function node like so:
 
@@ -214,8 +214,8 @@ The Function Item Node allows us to write a custom javascript code that gets exe
 
 In this workflow, we want to grab an email from the API response of the previous node. We are going to write a javascript expression that will grab **penultimate** object in the array of objects and returning the **payload** property in it that contains an email address. All we need to do is to paste the code below into the text area in the function node and execute the node.
 
-```
-return item[item.length-3].payload
+```js
+return item[item.length - 3].payload
 ```
 
 Here is a visual demonstration of the process:
@@ -266,7 +266,7 @@ After adding the access token, we need to specify the channel the message we are
 
 Now we need to style and structure the message that’ll be sent to slack. We can do this by adding various attachments. The first attachments we will be adding are the text, that will be sent. Now click on Add attachment, after then click on add attachment item and select Text, then in the text field, click on the gears icon close to it and then add expression. You can structure the message that is to be sent however you like it when the slash command is called. Here is how i decided to structure mine:
 
-```
+```bash
 I found the following details for this username:
 *Username:* {{$node["Set"].json["login"]}}
 *Name:* {{$node["Set"].json["name"]}}
@@ -281,19 +281,23 @@ Now go ahead to add a color for the message by clicking on the add item button a
 
 Also, add a Title for the message by clicking on the add item button and select title, in the title field, choose whatever title you want for the message by click on the gears icon close to the field and then add expression. This is how i structured my title:
 
-```
+```bash
 Github Details for {{$node["Set"].json["login"]}}
 ```
 
 Also, add a Thumbnail for the message, this should hold the image of the user. You can do this by clicking on the add attachment item button and select Thumbnail, in the title field, choose whatever title you want for the message by click on the gears icon close to the field and then add expression in the text area, paste the following:
 
-```
-{{$node["Set"].json["Photo"]}}
+```js
+{
+  {
+    $node['Set'].json['Photo']
+  }
+}
 ```
 
 Then lastly, add a footer. This footer should contain the date the user’s profile was created. You can do this by clicking on the add item button and select footer, in the title field, choose whatever title you want for the message by click on the gears icon close to the field and then add expression in the text area, paste the following:
 
-```
+```bash
 Profile was last updated at: {{$node["HTTP Request"].json["updated_at"]}}
 ```
 

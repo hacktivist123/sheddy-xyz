@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-const lost = require('lost');
-const pxtorem = require('postcss-pxtorem');
-const autoprefixer = require('autoprefixer');
+const lost = require('lost')
+const pxtorem = require('postcss-pxtorem')
+const autoprefixer = require('autoprefixer')
 
 module.exports = [
   lost(),
@@ -35,4 +35,4 @@ module.exports = [
     minPixelValue: 0
   }),
   autoprefixer()
-];
+]

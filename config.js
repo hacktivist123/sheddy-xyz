@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   url: 'https://sheddy.xyz',
@@ -13,7 +13,7 @@ module.exports = {
   menu: [
     {
       label: 'Articles',
-      path: '/',
+      path: '/'
     },
     {
       label: 'Talks',
@@ -21,8 +21,8 @@ module.exports = {
     },
     {
       label: 'About me',
-      path: '/pages/about',
-    },
+      path: '/pages/about'
+    }
   ],
   author: {
     name: 'Shedrack Akintayo',
@@ -34,7 +34,7 @@ module.exports = {
       telegram: 'Nagato_Pain',
       twitter: 'coder_blvck',
       github: 'hacktivist123',
-      linkedin: 'shedrackakintayo',
-    },
-  },
-};
+      linkedin: 'shedrackakintayo'
+    }
+  }
+}

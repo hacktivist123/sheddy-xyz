@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-const _ = require('lodash');
-const path = require('path');
-const siteConfig = require('../../config.js');
+const _ = require('lodash')
+const path = require('path')
+const siteConfig = require('../../config.js')
 
 module.exports = async (graphql, actions) => {
-  const { createPage } = actions;
-  const { postsPerPage } = siteConfig;
+  const { createPage } = actions
+  const { postsPerPage } = siteConfig
 
   const result = await graphql(`
     {
@@ -19,11 +19,11 @@ module.exports = async (graphql, actions) => {
         }
       }
     }
-  `);
+  `)
 
   _.each(result.data.allMarkdownRemark.group, (category) => {
-    const numPages = Math.ceil(category.totalCount / postsPerPage);
-    const categorySlug = `/category/${_.kebabCase(category.fieldValue)}`;
+    const numPages = Math.ceil(category.totalCount / postsPerPage)
+    const categorySlug = `/category/${_.kebabCase(category.fieldValue)}`
 
     for (let i = 0; i < numPages; i += 1) {
       createPage({
@@ -39,7 +39,7 @@ module.exports = async (graphql, actions) => {
           hasPrevPage: i !== 0,
           hasNextPage: i !== numPages - 1
         }
-      });
+      })
     }
-  });
-};
+  })
+}
