@@ -19,7 +19,7 @@ Nigerians know how to use other people's stuff properly to make profits, this is
 
 Now, one of the main reasons why we can't have a unique sound in Nigeria is that Nigeria is an extremely ethnically diverse multinational country. There are a lot of [ethnic groups](https://en.wikipedia.org/wiki/List_of_ethnic_groups_in_Nigeria) in Nigeria, we don't have a uniform look in Nigeria like other african countries.
 
-Regarding music, there can't be a Nigerian sound because Cause every person in Nigeria, at least back in those days were totally different.
+Regarding music, there can't be a Nigerian sound because every person in Nigeria, at least back in those days were totally different.
 
 I can tell who is a South African from instant but with Nigerians it's not so obvious, We even sound differently most times.
 
