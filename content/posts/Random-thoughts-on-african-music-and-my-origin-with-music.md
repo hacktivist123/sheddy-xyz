@@ -17,7 +17,10 @@ For example, look at their **[Ampiano sound](https://en.wikipedia.org/wiki/Amap
 
 Nigerians know how to use other people's stuff properly to make profits without actually trying to produce their original stuff, this is totally my opinion. Nigerians are skilled at making profits from anything, we are great and very creative business people at heart.
 
-Now, one of the main reasons why we can't have a unique sound in Nigeria is that Nigeria is an extremely ethnically diverse multinational country. There are a lot of [ethnic groups](https://en.wikipedia.org/wiki/List_of_ethnic_groups_in_Nigeria) in Nigeria, we don't have a uniform look in Nigeria like other african countries. Regarding music, there can't be a Nigerian sound because Cause every person in Nigeria, at least back in those days were totally different.
+Now, one of the main reasons why we can't have a unique sound in Nigeria is that Nigeria is an extremely ethnically diverse multinational country. There are a lot of [ethnic groups](https://en.wikipedia.org/wiki/List_of_ethnic_groups_in_Nigeria) in Nigeria, we don't have a uniform look in Nigeria like other african countries.
+
+Regarding music, there can't be a Nigerian sound because Cause every person in Nigeria, at least back in those days were totally different.
+
 I can tell who is a South African from instant but with Nigerians it's not so obvious, We even sound differently most times.
 
 The [**Shaku Shaku**](https://www.urbandictionary.com/define.php?term=Shaku%20Shaku) sound musicians like **[Olamide](https://en.wikipedia.org/wiki/Olamide),** **[Naira Marley](https://en.wikipedia.org/wiki/Naira_Marley),** etc. made popular is one of the very few times Nigerians have been original with music, forget the [Fela sound](https://en.wikipedia.org/wiki/Afrobeat) we are known for. We’ve sampled that enough especially **[Wizkid](https://en.wikipedia.org/wiki/Wizkid)** and **[Burna](https://en.wikipedia.org/wiki/Burna_Boy)**, those guys have sampled [Fela](https://en.wikipedia.org/wiki/Fela_Kuti) a whole lot.
