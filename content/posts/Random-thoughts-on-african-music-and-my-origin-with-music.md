@@ -15,7 +15,7 @@ If you look closely at the music scene in Africa, **South Africa** is the orig
 
 For example, look at their **[Ampiano sound](https://en.wikipedia.org/wiki/Amapiano)** that Nigerians are going crazy for, **[Mayorkun](https://en.wikipedia.org/wiki/Mayorkun)** used it in **[Geng](https://www.youtube.com/watch?v=BBzi69kOAW8)** and it made massive waves in Nigeria.
 
-Nigerians know how to use other people's stuff properly to make profits without actually trying to produce their original stuff, this is totally my opinion. Nigerians are skilled at making profits from anything, we are great and very creative business people at heart.
+Nigerians know how to use other people's stuff properly to make profits, this is totally my opinion. Nigerians are skilled at making profits from anything, we are great and very creative business people at heart.
 
 Now, one of the main reasons why we can't have a unique sound in Nigeria is that Nigeria is an extremely ethnically diverse multinational country. There are a lot of [ethnic groups](https://en.wikipedia.org/wiki/List_of_ethnic_groups_in_Nigeria) in Nigeria, we don't have a uniform look in Nigeria like other african countries.
 
@@ -48,7 +48,7 @@ My mom loves music so much and I think it’s something all of her children have
 
 Currently, my mum is still a chorister, she was a choir mistress at some point last year. These days she is focused more on writing music in Hausa for the church ( [MFM](https://en.wikipedia.org/wiki/Mountain_of_Fire_and_Miracles_Ministries) ), which still fascinates me till today even though I don’t tell her.
 
- She listens to most types of music till date which is most likely why I don’t have a specific genre of music I listen to, I listen to as much as i can get my hands on.
+She listens to most types of music till date which is most likely why I don’t have a specific genre of music I listen to, I listen to as much as i can get my hands on.
 
 Music has affected my mum as a person because she speaks about 4 different local languages.
 
