@@ -3,7 +3,7 @@ title: 'My Thoughts on African ( South African, Nigerian) Music & My Origin With
 date: '2020-07-22'
 template: 'post'
 draft: false
-slug: 'random-thoughts-on-african-music'
+slug: 'my-thoughts-on-african-music'
 category: 'Music'
 tags:
   - 'Music'
