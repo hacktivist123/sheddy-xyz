@@ -1,5 +1,5 @@
 ---
-title: 'Random Thoughts on African ( South African, Nigerian) Music & My Origin With Music'
+title: 'My Thoughts on African ( South African, Nigerian) Music & My Origin With Music'
 date: '2020-07-22'
 template: 'post'
 draft: false
