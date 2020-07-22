@@ -52,7 +52,7 @@ She listens to most types of music till date which is most likely why I don’t 
 
 Music has affected my mum as a person because she speaks about 4 different local languages.
 
-Hausa, Igbo, Yoruba, Tiv (originating from [Benue state](https://en.wikipedia.org/wiki/Benue_State)), and her [native language](https://en.wikipedia.org/wiki/Alumu_language) originating from [Nassarawa state](https://en.wikipedia.org/wiki/Nasarawa_State).
+She speaks Hausa, Igbo, Yoruba, Tiv (originating from [Benue state](https://en.wikipedia.org/wiki/Benue_State)), and her [native language](https://en.wikipedia.org/wiki/Alumu_language) originating from [Nassarawa state](https://en.wikipedia.org/wiki/Nasarawa_State).
 
 Yup! She’s [Hausa](https://en.wikipedia.org/wiki/Hausa_people) by tribe 😅
 
