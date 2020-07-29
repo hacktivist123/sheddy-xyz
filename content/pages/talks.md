@@ -16,6 +16,7 @@ The table is arranged from the latest to the oldest :)
 
 | Talk Title                                                                  | Conference Name                          | Date       |
 | --------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| Open Source in Africa                                                       | All Things Open 2020                        | 19/10/2020  |
 | Javascript Build Tools - Past & Beyond                                      | Shift Remote 2020                        | 9/07/2020  |
 | Javascript Tooling - The Evolution and Future of JS & Front-end Build Tools | JS Nation Live 2020                      | 18/06/2020 |
 | Demystifying Machine Learning on the Web with Tensorflow.js.                | Open Source Festival                     | 21/02/2020 |
