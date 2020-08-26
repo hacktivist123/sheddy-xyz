@@ -24,7 +24,7 @@ I have 2 years plus experience in Technical writing for Companies and Publicatio
 ## Writing Engagements
 
 - [Smashing Magazine](https://www.smashingmagazine.com/author/shedrack-akintayo/)
-- LogRocket
+- [LogRocket](https://blog.logrocket.com/author/shedrackakintayo/)
 - ITNEXT
 - Codeburst
 
