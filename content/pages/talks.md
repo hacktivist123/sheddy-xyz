@@ -12,13 +12,14 @@ Want me to speak at your event? Reach out to me via email or twitter 🔥🚀. M
 
 Below is a table containing talks I've delivered in the past and also the talks i haven't delivered. Slides to all of the talks below can be found on [Speaker Deck](https://speakerdeck.com/hacktivist123) 😇.
 
-The table is arranged from the latest to the oldest :)
+The table is arranged from the latest to the oldest 😄
 
 | Talk Title                                                                  | Conference Name                          | Date          |
 | --------------------------------------------------------------------------- | ---------------------------------------- | ------------- |
 | Understanding and Approaching Developer Communities in Smaller Regions      | DevRel/Asia 2020                         | 14/11/2020    |
 | Open Source in Africa                                                       | All Things Open 2020                     | 19/10/2020    |
 | Open Source in Africa                                                       | Free/Libre Open Source Software Kosova   | 26-27/09/2020 |
+| Technical Writing 101                                                       | Dev Careers Workshop Series              | 14/11/2020    |
 | Javascript Build Tools - Past & Beyond                                      | Shift Remote 2020                        | 9/07/2020     |
 | Javascript Tooling - The Evolution and Future of JS & Front-end Build Tools | JS Nation Live 2020                      | 18/06/2020    |
 | Demystifying Machine Learning on the Web with Tensorflow.js.                | Open Source Festival                     | 21/02/2020    |
