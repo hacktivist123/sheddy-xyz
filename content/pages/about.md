@@ -5,17 +5,18 @@ socialImage: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG
 ---
 
 Hi there, I'm Shedrack Akintayo! 👋
+
+I am a Developer Advocate 🥑, Software Developer, and Technical Writer. I have ~4 years professional expertise in Software Development, majoring mostly in Frontend technologies.
+
 I love to [write](/), code, and [teach](/pages/talks).
 
-I also love constant learning, growing and working towards becoming a better version of myself.
+Personally, I love constant learning, growing and working towards becoming a better version of myself 😄.
 
-I am a Software Developer, Developer Advocate 🥑 and Technical Writer. I have 3-4 years professional expertise in Software Development, majoring mostly in Frontend technologies.
+Lately, I lead Developer Relations efforts at [Cloud Foundry Foundation](https://cloudfoundry.com), where we are working on providing the best developer experience on kubernetes.
 
-I am experienced in organising developer driven events and also managing developer communities.
+I am well experienced in organising developer driven events and also managing developer communities. On some days, I enjoy writing API documentation, as well as building APIs, using Nodejs alongside logging and ARM tools like New Relic etc.
 
-I’m well experienced in writing API documentation, as well as building APIs, using logging and ARM tools like New Relic etc.
-
-I have 2 years plus experience in Technical writing for Companies and Publications and also I have a track record in helping many developer communities in my locality organise and plan events.
+In my free time, I write techincal articles mostly on Cloud Native Technologies, Javascript etc. ~3 experience in Technical writing for companies and publications alongside a track record in helping many developer communities in my locality organise and plan events.
 
 ### Main Spoken Language
 
@@ -25,7 +26,7 @@ I have 2 years plus experience in Technical writing for Companies and Publicatio
 
 - [Smashing Magazine](https://www.smashingmagazine.com/author/shedrack-akintayo/)
 - [LogRocket](https://blog.logrocket.com/author/shedrackakintayo/)
-- ITNEXT
+- [ITNEXT](https://medium.com/@Sheddy_Nathan)
 - Codeburst
 
 ## Technologies & Skills
@@ -33,7 +34,9 @@ I have 2 years plus experience in Technical writing for Companies and Publicatio
 - Javascript
 - React
 - Node
-- NoSQL Databases
+- Docker
+- Cloud Foundry
+- NoSQL Databases (mongoDB etc.)
 - Community Management and Building
 - Technical Writing
 - API Documentation
