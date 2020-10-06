@@ -28,7 +28,7 @@ module.exports = {
     name: 'Shedrack Akintayo',
     photo:
       'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG_9816_pnaxcf.jpg',
-    bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑 building useful things with javascript.'}`,
+    bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑.'}`,
     contacts: {
       email: 'akintayoshedrack@gmail.com',
       telegram: 'Nagato_Pain',
