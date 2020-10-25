@@ -17,7 +17,9 @@ The table is arranged from the latest to the oldest 😄
 | Talk Title                                                                  | Conference Name                          | Date          |
 | --------------------------------------------------------------------------- | ---------------------------------------- | ------------- |
 | Understanding and Approaching Developer Communities in Smaller Regions      | DevRel/Asia 2020                         | 14/11/2020    |
-| Open Source in Africa                                                       | All Things Open 2020                     | 19/10/2020    |
+| Try Cloud Foundry Hands-on Lab                                              | Cloud Foundry EU Summit 2020             | 20/10/2020    |
+| Documenting Your Open Source Project                                        | Github Virtual Summit October 2020       | 20/10/2020    |
+| Open Source in Africa(keynote & Internation Track)                          | All Things Open 2020                     | 19/10/2020    |
 | Open Source in Africa                                                       | Free/Libre Open Source Software Kosova   | 26-27/09/2020 |
 | Technical Writing 101                                                       | Dev Careers Workshop Series              | 14/11/2020    |
 | Javascript Build Tools - Past & Beyond                                      | Shift Remote 2020                        | 9/07/2020     |
