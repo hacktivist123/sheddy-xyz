@@ -73,7 +73,7 @@ Components are stand-alone and reusable pieces of code. They have the same purpo
 ```js
 class MyComponent extends React.Component {
   render() {
-    return <div>This is a class component</div>;
+    return <div>This is a class component</div>
   }
 }
 ```
@@ -96,7 +96,7 @@ Props in React are like function arguments in JavaScript and also like attribute
 
 ```js
 function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
+  return <h1>Hello, {props.name}</h1>
 }
 ```
 
@@ -108,15 +108,15 @@ This is an example of how state in ReactJS is used:
 ```js
 class Car extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { brand: 'Ford' };
+    super(props)
+    this.state = { brand: 'Ford' }
   }
   render() {
     return (
       <div>
         <h1>My Car</h1>
       </div>
-    );
+    )
   }
 }
 ```
@@ -130,7 +130,7 @@ return (
   <div>
     <h1>My Car</h1>
   </div>
-);
+)
 ```
 
 The code in between the return method that looks like HTML is known as JSX
@@ -183,22 +183,22 @@ The first two script tags load React. The last one will load the code of your Re
 Now paste the following code inside the button.js file:
 
 ```js
-'use strict';
-const e = React.createElement;
+'use strict'
+const e = React.createElement
 class Button extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { clicked: false };
+    super(props)
+    this.state = { clicked: false }
   }
   render() {
     if (this.state.clicked) {
-      return 'You clicked this button.';
+      return 'You clicked this button.'
     }
     return e(
       'button',
       { onClick: () => this.setState({ clicked: true }) },
       'Click Me'
-    );
+    )
   }
 }
 ```
@@ -208,8 +208,8 @@ The code above creates a button component that would return a message when the b
 In other to use this component in our HTML page, you need to add the following code below your Button.js file:
 
 ```js
-const domContainer = document.querySelector('#button_container');
-ReactDOM.render(e(Button), domContainer);
+const domContainer = document.querySelector('#button_container')
+ReactDOM.render(e(Button), domContainer)
 ```
 
 The two lines of code above will find the `<div>` we added to our HTML in the first step, and then render our button React component inside of it.
@@ -222,22 +222,22 @@ To use create-react-app you can use the following methods from your terminal:
 
 [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b):
 
+(This is the most recommended way to using create-react-app and installing react on your machine)
+
 ```js
 npx create-react-app my-app
 ```
 
-(This is the most recommended way to using create-react-app)
-
 [npm](https://npmjs.org):
 
 ```js
-npm react-app my-app
+npm create-react-app my-app
 ```
 
 [yarn](https://yarnpkg.com):
 
 ```js
-yarn create react-app my-app
+yarn create-react-app my-app
 ```
 
 When any of the above commands are run, they would create a new React app called **my-app.**
