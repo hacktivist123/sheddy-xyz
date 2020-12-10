@@ -16,6 +16,7 @@ The table is arranged from the latest to the oldest 😄
 
 | Talk Title                                                                  | Conference Name                             | Date          |
 | --------------------------------------------------------------------------- | ------------------------------------------- | ------------- |
+| Getting Started with Cloud Foundry                                          | Hands On Labs Try Cloud Foundry [MENA]      | 10/11/2020    |
 | Understanding and Approaching Developer Communities in Smaller Regions      | DevRel/Asia 2020                            | 14/11/2020    |
 | Documenting Your Open Source Project                                        | DSC UNILAG Getting Started with Open Source | 11/11/2020    |
 | Try Cloud Foundry Hands-on Lab                                              | Cloud Foundry EU Summit 2020                | 20/10/2020    |
