@@ -9,7 +9,7 @@ description: In this tutorial, we will be deploying a full-stack application on
 category: Deployment
 tags:
   - NodeJS
-  - Cloud Foundry
+  - CloudFoundry
 ---
 - - -
 
