@@ -15,6 +15,8 @@ tags:
   - DevRel
   - Advocacy
 ---
+This article was originally published by me on the [Cloud Foundry Foundation Blog](https://medium.com/cloud-foundry-foundation/approaching-developer-relations-in-an-open-source-foundation-77b1c660bf95)
+
 ## Introduction
 
 About 7 months ago, I was employed as a Developer Advocate by the Cloud Foundry Foundation alongside [Ram Iyengar](https://twitter.com/ramiyengar) to build and scale a DevRel program.
@@ -131,5 +133,3 @@ Establishing a new developer relations program for an open-source organization l
 ## Conclusion
 
 Developer Relations is hard, it takes a lot of thinking, experimenting, etc. to figure what would work for your organization, and sometimes what works could stop working and you’d have to figure out another method. However, it is important to understand what your organization is trying to achieve with its Devrel program and work based on that. At the Cloud Foundry Foundation, we are constantly trying out new things and experimenting to make sure we create as much awareness as possible and get smaller teams and individual developers into the Cloud Foundry community. There’s still so much we are doing but for now, this is what I can share with you all.
-
-This article was originally published by me on the [Cloud Foundry Foundation Blog](https://medium.com/cloud-foundry-foundation/approaching-developer-relations-in-an-open-source-foundation-77b1c660bf95)
