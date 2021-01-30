@@ -15,15 +15,17 @@ tags:
   - DevRel
   - Advocacy
 ---
+This article was originally published by me on the [Cloud Foundry Foundation Blog](https://medium.com/cloud-foundry-foundation/approaching-developer-relations-in-an-open-source-foundation-77b1c660bf95)
+
 ### Introduction
 
 About 7 months ago, I was employed as a Developer Advocate by the Cloud Foundry Foundation alongside [Ram Iyengar](https://twitter.com/ramiyengar) to build and scale a DevRel program.
 
-The Cloud Foundry Foundation is an organization focused on supporting the [Cloud Foundry](https://cloudfoundry.org) open source community. The foundation basically exists to drive global awareness and adoption of the Cloud Foundry open source project, to grow a vibrant community of contributors, and to create coherence in strategy and action across all member companies for the sake of the project.
+The Cloud Foundry Foundation is an organization focused on supporting the [Cloud Foundry](https://cloudfoundry.org) open source community. The foundation basically exists to drive global awareness and adoption of the Cloud Foundry open-source project, to grow a vibrant community of contributors, and to create coherence in strategy and action across all member companies for the sake of the project.
 
 I am pretty new to working with an open-source foundation because it’s an entirely different ball game as compared to working for a profit-based organization/business.
 
-Over the past 7 months, we’ve built a new DevRel program from scratch, and in this article I’ll share some tips, ideas, and frameworks we’ve built to help us with our work and some lessons we’ve learned along the way.
+Over the past 7 months, we’ve built a new DevRel program from scratch, and in this article, I’ll share some tips, ideas, and frameworks we’ve built to help us with our work and some lessons we’ve learned along the way.
 
 There’s still so much to learn and do but the aim of this article is to share what we’ve learned along the way, and maybe, just maybe it may be beneficial to a team out there.
 
@@ -50,7 +52,7 @@ So how did we go about our responsibilities?
 
 #### Answering Important questions
 
-This was the tricky part because initially the foundation itself didn’t have a plan so we had to come up with something ourselves. So I came up with a presentation that contains various methods we’ll be making use of to achieve our goals. If you’re interested in seeing what the presentation looks like, please visit [here](https://drive.google.com/file/d/1GmRBC4MtpxIflfNQ3l_SpFVz5-fm92Xc/view?usp=sharing).
+This was the tricky part because initially, the foundation itself didn’t have a plan so we had to come up with something ourselves. So I came up with a presentation that contains various methods we’ll be making use of to achieve our goals. If you’re interested in seeing what the presentation looks like, please visit [here](https://drive.google.com/file/d/1GmRBC4MtpxIflfNQ3l_SpFVz5-fm92Xc/view?usp=sharing).
 
 #### Summary of the presentation:
 
@@ -76,7 +78,7 @@ We had to be able to answer all these questions I highlighted or use them as a g
 
 #### **Persona Research**
 
-Before we started making content or any new educational material, we conducted a research and drafted a document on the different personas we will be creating content to get them interested in Cloud Foundry. We put into consideration various types of developers that could possibly use Cloud Foundry for their divergent needs. Currently, whenever we create content, we have these personas in mind and create content based on the information we amassed.
+Before we started making content or any new educational material, we conducted research and drafted a document on the different personas we will be creating content to get them interested in Cloud Foundry. We put into consideration various types of developers that could possibly use Cloud Foundry for their divergent needs. Currently, whenever we create content, we have these personas in mind and create content based on the information we amassed.
 
 Besides just creating content based on the personas, we made this persona research to:
 
@@ -84,7 +86,7 @@ Besides just creating content based on the personas, we made this persona resear
 * Make software engineers/programmers/developers aware of Cloud Foundry.
 * Get new users to adopt the open-source version of CF and include it in their existing workflows.
 
-With this personal research, we can to reach various levels of developers and teams whenever we create content or do anything developer evangelism related.
+With this personal research, we can reach various levels of developers and teams whenever we create content or do anything developer evangelism related.
 
 #### Developer Experience
 
@@ -104,12 +106,12 @@ Apart from making tutorials, we need to get more people into the Cloud Foundry c
 
 > ***Note: This can change at anytime as we are still experimenting with these strategies***
 
-* **Webinars/Hands on Labs** — We set up hands-on labs for various regions(APAC, MENA, EMEA etc.) for people that want to get started with Cloud Foundry. We use our existing tutorials to teach people the basics of Cloud Foundry
+* **Webinars/Hands-on Labs** — We set up hands-on labs for various regions(APAC, MENA, EMEA, etc.) for people that want to get started with Cloud Foundry. We use our existing tutorials to teach people the basics of Cloud Foundry
 * **Talks**— We plan to submit talks at various Paas/Iaas tech events to basically talk about how Cloud Foundry can improve your Deployment workflow and how easy it has become to use.
 * **Community Reward Programs —**We plan to improve our existing Cloud Foundry Ambassadors program to highlight our highly performing community members and also give awards to them. In order to show that we have to show we actually see what these community members are doing and we appreciate it.
-* **Collaboration with other communities**— This is very important and we are paying a lot of attention to it currently. Cloud Foundry as a Paas can work with various other tools e.g Kubernetes, Github Actions etc. We plan to collaborate with advocates from this community to showcase how well Cloud Foundry can work with these tools/platforms and improve their overall developer experience.
-* **Community Publicity**— We are non-profit organization, so we cannot spend so much funds on social media ads and commercials but what we are doing and plan to do is spend as little as we can on social media ads and do more community outreach. For example, giving talks, appearing on highly listened community podcasts (I was on a [bootiful podcast](https://spring.io/blog/2020/12/18/a-bootiful-podcast-cloud-foundry-developer-advocate-shedrack-akintayo) by Josh Long), interviews with thought leaders in the Cloud Foundry community and also the Kubernetes community etc.
-* **Proper Content Distribution** —The main aim of this process/method is to generate interest, generate awareness, extract engagement. Other than distributing content on our Medium publication, YouTube channel and Twitter account. We are making conscious efforts to also distribute content on various other platforms like Reddit, Dev.to etc. We also have an internal document that we created to record our various distribution channels. These distribution channels are categorized into three categories; Short term, Medium term, Long term. These categories indicate how long it would take to create meaningful impact form content published on those channels.
+* **Collaboration with other communities**— This is very important and we are paying a lot of attention to it currently. Cloud Foundry as a Paas can work with various other tools e.g Kubernetes, Github Actions, etc. We plan to collaborate with advocates from this community to showcase how well Cloud Foundry can work with these tools/platforms and improve their overall developer experience.
+* **Community Publicity**— We are a non-profit organization, so we cannot spend so many funds on social media ads and commercials but what we are doing and plan to do is spend as little as we can on social media ads and do more community outreach. For example, giving talks, appearing on highly listened community podcasts (I was on a [bootiful podcast](https://spring.io/blog/2020/12/18/a-bootiful-podcast-cloud-foundry-developer-advocate-shedrack-akintayo) by Josh Long), interviews with thought leaders in the Cloud Foundry community and also the Kubernetes community, etc.
+* **Proper Content Distribution** —The main aim of this process/method is to generate interest, generate awareness, extract engagement. Other than distributing content on our Medium publication, YouTube channel, and Twitter account. We are making conscious efforts to also distribute content on various other platforms like Reddit, Dev.to, etc. We also have an internal document that we created to record our various distribution channels. These distribution channels are categorized into three categories; Short term, Medium term, Long term. These categories indicate how long it would take to create meaningful impact from content published on those channels.
 
 ### How We Measure Success
 
@@ -121,13 +123,13 @@ We also make sure to keep track of the number of people that attend our hands-on
 
 ### Lessons Learnt
 
-Establishing a new developer relations program for an open source organization like the Cloud Foundry Foundation, we’ve learnt a few things on the way:
+Establishing a new developer relations program for an open-source organization like the Cloud Foundry Foundation, we’ve learned a few things on the way:
 
 * **Keep Experimenting** — There’s never one way to do something in developer relations, you have to try out other methods to achieve our goals.
 * Make sure to understand what you’re trying to achieve from the onset, this will help you make the right decisions.
 * **Measure everything you can** — It is important to measure as much as you can because only then can you use the data gotten to make informed decisions.
-* **Developers First**— Whatever you’re trying to do, always make sure that you place yourself in the shoes of the developers that are using your software and make decisions or content based on what would be beneficial to them. This is why creating personas that models real developers is important.
+* **Developers First**— Whatever you’re trying to do, always make sure that you place yourself in the shoes of the developers that are using your software and make decisions or content based on what would be beneficial to them. This is why creating personas that model real developers is important.
 
 ### Conclusion
 
-Developer Relations is hard, it takes a lot of thinking, experimenting etc. to figure what would work for your organization, and sometimes what works could stop working and you’d have to figure out another method. However, it is important to understand what your organization is trying to achieve with its Devrel program and work based on that. At the Cloud Foundry Foundation, we are constantly trying out new things and experimenting to make sure we create as much awareness as possible and get smaller teams and individual developers into the Cloud Foundry community. There’s still so much we are doing but for now, this is what I can share with you all.
+Developer Relations is hard, it takes a lot of thinking, experimenting, etc. to figure what would work for your organization, and sometimes what works could stop working and you’d have to figure out another method. However, it is important to understand what your organization is trying to achieve with its Devrel program and work based on that. At the Cloud Foundry Foundation, we are constantly trying out new things and experimenting to make sure we create as much awareness as possible and get smaller teams and individual developers into the Cloud Foundry community. There’s still so much we are doing but for now, this is what I can share with you all.
