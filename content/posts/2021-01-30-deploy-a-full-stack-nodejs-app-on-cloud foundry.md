@@ -3,7 +3,7 @@ template: post
 title: Deploy a Full-stack Nodejs App on Cloud Foundry
 slug: deploy-a-fullstack-nodejs-app-on-cloudfoundry
 draft: false
-date: 2021-01-30T18:54:16.356Z
+date: 2021-01-30T19:12:53.958Z
 description: In this tutorial, we will be deploying a full-stack application on
   Cloud Foundry with a Node.js backend and a MongoDB database service.
 category: Deployment
