@@ -11,7 +11,7 @@ tags:
   - NodeJS
   - CloudFoundry
 ---
-- - -
+This article was originally published by me on the [Cloud Foundry Foundation Blog](https://medium.com/cloud-foundry-foundation/approaching-developer-relations-in-an-open-source-foundation-77b1c660bf95)
 
 ### Introduction
 
