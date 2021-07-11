@@ -13,7 +13,7 @@ type Props = {
 const Feed = ({ edges }: Props) => (
   <div className={styles['feed']}>
     <black-lives></black-lives>
-//     {useExternalLink('https://unpkg.com/sars-stand/black-lives.js', 'module')}
+    {/* {useExternalLink('https://unpkg.com/sars-stand/black-lives.js', 'module')} */}
     {edges.map((edge) => (
       <div className={styles['feed__item']} key={edge.node.fields.slug}>
         <div className={styles['feed__item-meta']}>
