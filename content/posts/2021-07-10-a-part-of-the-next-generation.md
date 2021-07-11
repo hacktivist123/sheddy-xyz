@@ -2,7 +2,7 @@
 template: post
 title: A Part of the Next Generation
 slug: a-part-of-the-next-generation
-draft: true
+draft: false
 date: 2021-07-10T23:11:13.410Z
 description: After a while working at the CFF, I realized that I was looking for
   a different thing because I felt like my work with the CFF was already at its
