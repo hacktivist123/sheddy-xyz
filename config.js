@@ -7,7 +7,7 @@ module.exports = {
   subtitle: 'A Blog for byte sized articles on Software Development and Developer Relations.',
   disqusShortname: 'sheddyxyz',
   postsPerPage: 4,
-  icon: 'static/photo.jpg',
+  icon: 'https://res.cloudinary.com/hacktivist/image/upload/v1625962753/IMG_2193_iaorft.jpg',
   googleAnalyticsId: 'UA-123912722-2',
   useKatex: false,
   menu: [
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Shedrack Akintayo',
     photo:
-      'static/img_2193.jpeg',
+      'https://res.cloudinary.com/hacktivist/image/upload/v1625962753/IMG_2193_iaorft.jpg',
     bio: `${'A Blog for byte sized articles on Software Development and Developer Relations. Shedrack Akintayo is a Software Developer and Developer Advocate 🥑.'}`,
     contacts: {
       email: 'akintayoshedrack@gmail.com',
