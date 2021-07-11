@@ -13,9 +13,11 @@ category: Career
 tags:
   - Career
 ---
-Hello friends 👋, the past year has been nothing short of amazing, I became heavily involved in developer relations and cloud-native space, thanks to the opportunity that working at the Cloud Foundry Foundation(CFF) provided for me. 
+Hello friends 👋 
 
-It was an incredible journey. I had the opportunity to work with different technologies, build strategy and also working with an open-source community. I learnt a lot about kindness, empathy, cloud technology, marketing and public communications which is an essential part of my job as a Developer Advocate. I worked with some of the most brilliant people I ever met and I executed my best work with them.
+The past year has been nothing short of amazing, I became heavily involved in developer relations and cloud-native space, thanks to the opportunity that working at the Cloud Foundry Foundation(CFF) provided for me. 
+
+It was an incredible journey. I had the opportunity to work with different technologies, build strategy and also work with an open-source community. I learnt a lot about kindness, empathy, cloud technology, marketing and public relations which are all essential parts of my job as a Developer Advocate. I worked with some of the most brilliant people I ever met and I executed my best work with them.
 
 I am grateful for the 1 year+ I spent working for the Cloud Foundry Foundation, and everybody that I met along the way.
 
@@ -27,7 +29,7 @@ Platform.sh is an end-to-end cloud PaaS that lets you launch, run and scale what
 
 I have always admired the technology being built at the company and it feels really good to be a part of it - the next generation. 
 
-Going forward, I will be creating a ton of content to educate the world about the business benefits of using Platform.sh and will be collaborating with other communities in the tech ecosystem.
+Going forward, I will be creating content to educate the world about the business benefits of using Platform.sh and will be collaborating with other communities in the tech ecosystem. 
 
 This is a start of a new journey for me and I'm beyond excited to go on it with every one of you reading this. 
 
