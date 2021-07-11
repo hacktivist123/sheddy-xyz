@@ -19,9 +19,9 @@ The past year has been nothing short of amazing, I became heavily involved in de
 
 It was an incredible journey. I had the opportunity to work with different technologies, build strategy and also work with an open-source community. I learnt a lot about kindness, empathy, cloud technology, marketing and public relations which are all essential parts of my job as a Developer Advocate. I worked with some of the most brilliant people I ever met and I executed my best work with them.
 
-I am grateful for the 1 year+ I spent working for the Cloud Foundry Foundation, and everybody that I met along the way.
+I am grateful for the 1 year+ I spent working for the Cloud Foundry Foundation, everybody that I met along the way and the Cloud Foundry community.
 
-After a while working at the CFF, I realized that I was looking for a different thing because I felt like my work with the CFF was already at its end and I wanted to take on another challenge. I still wanted to remain in the Cloud ecosystem and also do open source work in the process because i strongly believe in it. Open source connects people around the world to share ideas, knowledge, and inspiration.
+After working at the CFF for a while, I realized that I wanted a different thing because I felt like my work with the CFF was already at its end and I wanted to take on another challenge. I still wanted to remain in the Cloud ecosystem and also do open source work in the process because i strongly believe in it. Open source connects people around the world to share ideas, knowledge, and inspiration.
 
 Today, I'm excited to share that I am joining the **Developer Relations team at Platform.sh as a DevRel Engineer**.
 
