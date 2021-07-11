@@ -12,7 +12,7 @@ I love to [write](/), code, and [teach](/pages/talks).
 
 Personally, I love constant learning, growing and working towards becoming a better version of myself 😄.
 
-Lately, I lead Developer Relations efforts at [Cloud Foundry Foundation](https://cloudfoundry.com), where we are working on providing the best developer experience on kubernetes.
+Professionally, I am Developer Relations Engineer at [Platfrom.sh](https://platform.sh), where we are working on providing an next-generation end-to-end Cloud PaaS that completely works for developers.
 
 I am well experienced in organising developer driven events and also managing developer communities. On some days, I enjoy writing API documentation, as well as building APIs, using Nodejs alongside logging and ARM tools like New Relic etc.
 
