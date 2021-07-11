@@ -21,7 +21,7 @@ I am grateful for the 1 year+ I spent working for the Cloud Foundry Foundation, 
 
 After a while working at the CFF, I realized that I was looking for a different thing because I felt like my work with the CFF was already at its end and I wanted to take on another challenge. I still wanted to remain in the Cloud ecosystem and also do open source work in the process because i strongly believe in it. Open source connects people around the world to share ideas, knowledge, and inspiration.
 
-Today, I'm excited to share that I have joined the Developer Relations team at Platform.sh as a DevRel Engineer.
+Today, I'm excited to share that I am joining the Developer Relations team at Platform.sh as a DevRel Engineer.
 
 Platform.sh is a next-generation end-to-end cloud PaaS that lets you launch, run and scale whatever kind of application you're building. The interesting part of the product is that you have all you need to easily take your application to production, from CI/CD, deployment to security. Platform.sh caters for all the needs of a development team and therefore allows developers to spend more time focused on building the application.
 
