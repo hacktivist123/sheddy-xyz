@@ -23,7 +23,7 @@ After a while working at the CFF, I realized that I was looking for a different 
 
 Today, I'm excited to share that I am joining the **Developer Relations team at Platform.sh as a DevRel Engineer**.
 
-Platform.sh is a next-generation end-to-end cloud PaaS that lets you launch, run and scale whatever kind of application you're building. The interesting part of the product is that you have all you need to easily take your application to production, from CI/CD, deployment to security. Platform.sh caters for all the needs of a development team and therefore allows developers to spend more time focused on building the application.
+Platform.sh is an end-to-end cloud PaaS that lets you launch, run and scale whatever kind of application you're building. The interesting part of the product is that you have all you need to easily take your application to production, from CI/CD, deployment to security. Platform.sh caters for all the needs of a development team and therefore allows developers to spend more time focused on building the application.
 
 I have always admired the technology being built at the company and it feels really good to be a part of it - the next generation. 
 
