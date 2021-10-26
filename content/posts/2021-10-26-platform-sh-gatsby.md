@@ -69,10 +69,10 @@ Inside the `routes.yaml` file, we’ll need to define how a [Router container](h
 # Each route describes how an incoming URL is going
 # to be processed by Platform.sh.
 "https://www.{default}/":
-  type:upstream
+  type: upstream
   upstream: "gatsby:http"
 "https://{default}/":
-  type:redirect
+  type: redirect
   to:"https://www.{default}/"
 ```
 
