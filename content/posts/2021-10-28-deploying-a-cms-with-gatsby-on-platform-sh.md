@@ -25,7 +25,7 @@ On Platform.sh multi-apps can be easily deployed with ease just like the way you
 
 Here is a diagram of a typical multi-application.
 
-![alt_text](/static/multiple-applications.png 'image_tooltip')
+![](https://lh5.googleusercontent.com/DKH3dwyvzbl7bZBy7LuiQMVMC8DUqHHWm9iAgKV4-9gD-8NJR04S8xwe0obWE4TcSuOmohB4RszGD_BSSfe7Qal4hA-9ItfSlLG745SPIhAjnV6i9udpk50j5TrQ5CEBZHyMzW81)
 
 This diagram shows a PHP application with a REST API built also with PHP, a router is defined that specifies the link to the API and a link to the main application. The main app uses some external data services like Redis, MySQL etc.
 
