@@ -209,9 +209,13 @@ git push platform master
 This command will initiate a deployment process and when it is done it’ll generate a temporary URL that can be used to preview the application in the browser.
 
 Here is a screenshot of the deployment completed on the Platform.sh console
+![](https://lh5.googleusercontent.com/OvjHSGlCD90UjS9xV9nMa6MaWhqkxZPwbJdjqLKKBuP6yXWQy1jRpBTrgqzHbH7vCEX-KrgNg_dC8tlktRTEKR7ltmQkMuEiaHElV3WG0X1xBXLkTwywWiGWk5LJfVMPeD_R3IBD)
 
 Here is also a screenshot of our application live on the browser.
 
+![](https://lh6.googleusercontent.com/7nn7qDS3rfoS21puS93ZTHsJUEvSOwA4L-qpTng-wcPInSpZNFC1mK7mbkqP0b4wO9WRu1YyoFyQoCz3d7-OYtzRdK7op74NaNdb0RHlBAxJgtccoCaeCxYBZfARkzrFiVl8jbh6)
+
 So that’s it, we just deployed a Django application on Platform.sh in very few steps.
-Conclusion
+
+### Conclusion
 In today’s blog post of the 7days of Platform.sh series, I configured and deployed a Django application, I also explained how Platform.sh supports Python and Django applications. On the next day of the series, I will be discussing how to assess the performance of a Django application deployed on Platform.sh with Blackfire.
