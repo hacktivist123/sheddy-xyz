@@ -1,7 +1,7 @@
 ---
 template: post
 title: Platform.sh & Django
-slug: deploying-a-cms-with-gatsby-on-platformsh
+slug: platformsh-and-django
 draft: false
 date: 2021-10-28T17:12:33.754Z
 description: In today’s blog post, which is part of the 7 days of Platform.sh series, I will be discussing how Platform.sh supports Python and Django developers to deploy their projects with ease.
