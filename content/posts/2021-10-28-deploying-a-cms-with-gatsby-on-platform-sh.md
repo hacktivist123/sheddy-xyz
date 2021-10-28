@@ -129,11 +129,11 @@ After you run the above command, platform.sh will take a copy of the main produc
 
 Here is a screenshot of the whole process in action.
 
-![alt_text](/static/screenshot-2021-10-28-at-00.02.28.png 'image_tooltip')
+![alt_text](https://lh6.googleusercontent.com/hrUDbzY5xSLlxs357Ev0EOmx0mJDlAjVoTYuHQYaJgdIMmayil3s6KrVfduQxvZuPpV979z8zdvxRs1_wBYKzpVTWWenIzMh3xU1Heysqr-itNpLa3J2EZqZldczleaTvXEkZl9-)
 
 Here is a screenshot of the branches available for our project on the Platform.sh console.
 
-![alt_text](/static/screenshot-2021-10-28-at-00.06.55.png 'image_tooltip')
+![alt_text](https://lh5.googleusercontent.com/W7TA0nxV7GI1jiMo06mk2G-oF0iTsRSbb3VfI0yCYEnGBJZ2CbNrDEfL-mSFOohXn3DGBR9D4XNRoFgnKmJgVie_zVzC4RLXMlKb6vzkjZi6JmqUSeUcPp0QKL6YhNXJVifvPcDr)
 
 If you look at the screenshot, you’ll see that there’s a **master** branch and a **add-drupal-backend** branch. I can easily make changes to my application on the **add-drupal-backend** branch deploy it and see it live without it affecting the master branch.
 
