@@ -120,9 +120,9 @@ Platform.sh takes care of infrastructure configuration for you, which makes it e
 
 #### Branching on Platform.sh
 
-One of the most powerful capabilities of platform.sj is the ability to branch your app into an isolated environment and make your development changes where necessary. Just like in git where you can create branches from your original project. You can do that by running the following command:
+One of the most powerful capabilities of Platform.sh is the ability to branch your app into an isolated environment and make your development changes where necessary. Just like in git where you can create branches from your original project. You can do that by running the following command:
 
-`Platform branch &lt;name of branch>`
+`Platform branch <name of branch>`
 
 After you run the above command, platform.sh will take a copy of the main production branch and create a copy of that branch into the new branch. After this, the copy of the production branch will be deployed oin the new branch that has been created.
 
@@ -132,9 +132,7 @@ Here is a screenshot of the whole process in action.
 
 Here is a screenshot of the branches available for our project on the Platform.sh console.
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](/static/screenshot-2021-10-28-at-00.06.55.png "image_tooltip")
 
 If you look at the screenshot, you’ll see that there’s a **master** branch and a **add-drupal-backend** branch. I can easily make changes to my application on the **add-drupal-backend** branch deploy it and see it live without it affecting the master branch.
 
