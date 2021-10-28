@@ -2,37 +2,38 @@
 template: post
 title: Deploying a CMS with Gatsby on Platform.sh
 slug: deploying-a-cms-with-gatsby-on-platformsh
-draft: true
+draft: false
 date: 2021-10-28T17:12:33.754Z
 description: On day one of the 7 days of the Platformsh series, I discussed how
   Platform.sh helps Gatsby and React developers host their Gatsby-based web
   application frontend. Today, we’ll be discussing how platform.sh supports the
   deployment of multiple applications as a single project, we’ll be using Gatsby
   and a Drupal CMS as a case study.
-category: SevenDaysOfPlatformsh
+category: sevendaysofplatformsh
 tags:
   - Gatsby
   - Drupal
 ---
-One of the most powerful capabilities of Platformsh is the ability to deploy multiple applications as a single project. Platform.sh supports building multiple applications per project (for example RESTful web services with a front-end, or a main website and a blog). So unlike other cloud hosting platforms where you’d need to deploy the backend/CMS elsewhere, Platformsh gives you the flexibility to manage all your applications architecture in one place. 
+
+One of the most powerful capabilities of Platformsh is the ability to deploy multiple applications as a single project. Platform.sh supports building multiple applications per project (for example RESTful web services with a front-end, or a main website and a blog). So unlike other cloud hosting platforms where you’d need to deploy the backend/CMS elsewhere, Platformsh gives you the flexibility to manage all your applications architecture in one place.
 
 On day one of the 7 days of the Platformsh series, I discussed how Platform.sh helps Gatsby and React developers host their Gatsby-based web application frontend. Today, we’ll be discussing how platform.sh supports the deployment of multiple applications as a single project, we’ll be using Gatsby and a Drupal CMS as a case study.
 
 ### Multi-apps on Platform.sh
 
-On Platform.sh multi-apps can be easily deployed with ease just like the way you’d deploy a single application. Platformsh use containers to deploy your multi apps and the way they are deployed is dependent on the approach you decide to use, you get to structure the way your application routing works, external data services your application use. 
+On Platform.sh multi-apps can be easily deployed with ease just like the way you’d deploy a single application. Platformsh use containers to deploy your multi apps and the way they are deployed is dependent on the approach you decide to use, you get to structure the way your application routing works, external data services your application use.
 
 Here is a diagram of a typical multi-application.
 
-![alt_text](/static/multiple-applications.png "image_tooltip")
+![alt_text](/static/multiple-applications.png 'image_tooltip')
 
 This diagram shows a PHP application with a REST API built also with PHP, a router is defined that specifies the link to the API and a link to the main application. The main app uses some external data services like Redis, MySQL etc.
 
-There are various ways to configure multi-apps on Platform.sh, you can read more about multi-apps on Platform.sh in the [official documentation](https://docs.platform.sh/configuration/app/multi-app.html). 
+There are various ways to configure multi-apps on Platform.sh, you can read more about multi-apps on Platform.sh in the [official documentation](https://docs.platform.sh/configuration/app/multi-app.html).
 
 ### Headless CMS Pattern on Platformsh
 
-Platform.sh supports using the Headless CMS architecture to build applications, if you have a headless CMS that you plugged to a frontend, you can easily deploy it on Platform.sh. 
+Platform.sh supports using the Headless CMS architecture to build applications, if you have a headless CMS that you plugged to a frontend, you can easily deploy it on Platform.sh.
 
 Gatsby and Drupal are two entirely different platforms, they are each a single application but when they are put together, they are called multi-apps on Platform.sh and they both follow the headless CMS pattern. Platform.sh will process each application according to the instructions specified in the .platform.app.yaml
 
@@ -42,11 +43,11 @@ To demonstrate how Platform.sh handles multi apps, decoupled apps and headless C
 
 Here are a few prerequisites to meet in order to follow along:
 
-* Clone the [repo](https://github.com/platformsh-templates/gatsby-drupal)
-* A [Platform.sh](https://platform.sh/) account with an SSH key configured on the account.
-* The [Platform.sh CLI](https://docs.platform.sh/gettingstarted/introduction/template/cli-install.html) installed on your machine.
+- Clone the [repo](https://github.com/platformsh-templates/gatsby-drupal)
+- A [Platform.sh](https://platform.sh/) account with an SSH key configured on the account.
+- The [Platform.sh CLI](https://docs.platform.sh/gettingstarted/introduction/template/cli-install.html) installed on your machine.
 
-***Note: For you to be able to deploy multi-apps, you’ll need to have at least a medium plan due to resource allocation constraints.***
+**_Note: For you to be able to deploy multi-apps, you’ll need to have at least a medium plan due to resource allocation constraints._**
 
 Now that we’ve cloned the repo, we can deploy it by carrying out the following steps:
 
@@ -73,25 +74,25 @@ Now that we’ve deployed our application, I'm going to explain what is going on
 In the .platform folder, it usually contains and `routes.yaml` and `services.yaml` file, the `routes.yaml` file looks like this:
 
 ```yaml
-"https://www.{default}/":
-    type: upstream
-    upstream: "gatsby:http"
+'https://www.{default}/':
+  type: upstream
+  upstream: 'gatsby:http'
 
-"https://{default}/":
-    type: redirect
-    to: "https://www.{default}/"
+'https://{default}/':
+  type: redirect
+  to: 'https://www.{default}/'
 
-"https://backend.{default}/":
-    type: upstream
-    upstream: "drupal:http"
-    cache:
-      enabled: true
-      # Base the cache on the session cookie and custom Drupal cookies. Ignore all other cookies.
-      cookies: ['/^SS?ESS/', '/^Drupal.visitor/']
+'https://backend.{default}/':
+  type: upstream
+  upstream: 'drupal:http'
+  cache:
+    enabled: true
+    # Base the cache on the session cookie and custom Drupal cookies. Ignore all other cookies.
+    cookies: ['/^SS?ESS/', '/^Drupal.visitor/']
 
-"https://www.backend.{default}/":
-    type: redirect
-    to: "https://backend.{default}/"
+'https://www.backend.{default}/':
+  type: redirect
+  to: 'https://backend.{default}/'
 ```
 
 This is where all the magic happens, here we are defining how to access the fronted and the backend of the application. If you look closely, we can access the drupal backend by using the <https://backend.xyz.com> and we can access the gatsby frontend by accessing the site normally via https//.xyz.com. Platform.sh makes it very easy to define the routing for your application via the `routes.yaml` file
@@ -105,11 +106,11 @@ The services.yaml file looks like this:
 # to power your Platform.sh project.
 
 db:
-    type: mariadb:10.4
-    disk: 2048
+  type: mariadb:10.4
+  disk: 2048
 
 cache:
-   type: redis:5.0
+  type: redis:5.0
 ```
 
 Here we are specifying a db for the drupal app as mariadb/mysql and the cache type to be redis.
@@ -128,11 +129,11 @@ After you run the above command, platform.sh will take a copy of the main produc
 
 Here is a screenshot of the whole process in action.
 
-![alt_text](/static/screenshot-2021-10-28-at-00.02.28.png "image_tooltip")
+![alt_text](/static/screenshot-2021-10-28-at-00.02.28.png 'image_tooltip')
 
 Here is a screenshot of the branches available for our project on the Platform.sh console.
 
-![alt_text](/static/screenshot-2021-10-28-at-00.06.55.png "image_tooltip")
+![alt_text](/static/screenshot-2021-10-28-at-00.06.55.png 'image_tooltip')
 
 If you look at the screenshot, you’ll see that there’s a **master** branch and a **add-drupal-backend** branch. I can easily make changes to my application on the **add-drupal-backend** branch deploy it and see it live without it affecting the master branch.
 
