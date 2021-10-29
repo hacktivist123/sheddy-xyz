@@ -7,7 +7,7 @@ date: 2021-10-26T16:00:54.141Z
 description: On day one of the 7 days of Platform.sh series, I’ll be discussing
   how Platform.sh helps Gatsby and React developers host their Gatsby-based web
   application frontends.
-category: SeveDaysOfPlatformsh
+category: sevendaysofplatformsh
 tags:
   - Platformsh
 ---
