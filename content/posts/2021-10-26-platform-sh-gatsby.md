@@ -187,6 +187,10 @@ So that’s it, we just deployed a Gatsby application on Platform.sh.
 
 To preview the site on our machine, we need to use any of the generated environment routes or run the following command to get the generated routes.
 
+```bash
+platform url
+```
+
 You can find a live preview of the site, [here](https://www.master-7rqtwti-nwwv277czy73m.eu-3.platformsh.site/)
 
 ![](https://lh4.googleusercontent.com/Sw326dGsfIHj3ZmRcvdxfMqj2kfCa6cV5tUv0BIdwoxVn6h6TZusp_hBpeDlV24KYc3RdtNrsKNa7W00xfHOrBr2L2Y8W8xWJwteoiTRcP4IWsJZpQXahuTh8bhf_XJp2Mf7oNMt=s1600)
