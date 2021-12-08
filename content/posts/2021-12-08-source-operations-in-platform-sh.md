@@ -163,9 +163,15 @@ if [ "$PLATFORM_BRANCH" = "$UPDATES_ENVIRONMENT" ]; then
 fi
 ```
 
-Over here, when this script is executed, it checks if it’s on the UPDATES_ENVIRONMENT branch before executing a bunch of commands. This allows us to ensure that while we can look for and commit updates when they are available, the cron will only run on a specific development environment that stays active at all times for this one purpose.
+Over here, when this script is executed, it checks if it’s on the `UPDATES_ENVIRONMENT` branch before executing a bunch of commands. This allows us to ensure that while we can look for and commit updates when they are available, the cron will only run on a specific development environment that stays active at all times for this one purpose.
 
-The first command creates a backup of the environment, then syncs the application code from production, and finally runs the source operation with the following command `platform source-operation:run <source operation name>` using the Platform.sh CLI within the application container
+The first command creates a backup of the environment, then syncs the application code from production, and finally runs the source operation with the following command
+
+```bash
+platform source-operation:run <source operation name>
+```
+
+using the Platform.sh CLI within the application container
 
 The second script is responsible for updating the application from upstream once a week and it is also a bash script that looks like this:
 
@@ -182,7 +188,11 @@ if [ "$PLATFORM_BRANCH" = "$UPDATES_ENVIRONMENT" ]; then
 fi
 ```
 
-Just like the first script, it checks if it’s on the UPDATES_ENVIRONMENT branch before executing a bunch of commands. The first command creates a backup of the environment, then syncs the application code, and finally runs the source operation with the following command `platform source-operation:run <source operation name>`.
+Just like the first script, it checks if it’s on the `UPDATES_ENVIRONMENT` branch before executing a bunch of commands. The first command creates a backup of the environment, then syncs the application code, and finally runs the source operation with the following command
+
+```bash
+platform source-operation:run <source operation name>
+```
 
 In both cases, if updates result in changes to the application, a new commit will be pushed to the environment, which will be rebuilt and deployed. From here, we can set up a notification to alert the team that there are updates ready to review and merge manually. Alternatively, we can set up an extensive set of tests that would enable minor updates to merge automatically, alerting us only when a deployment resulting from an update fails and requires investigation.
 
