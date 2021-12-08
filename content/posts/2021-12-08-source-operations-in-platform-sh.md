@@ -4,7 +4,7 @@ title: Source Operations in Platform.sh
 slug: source-operations-on-platformsh
 draft: false
 date: 2021-11-04T17:36:00.000Z
-description: >-.
+description: >-
   In today’s blog post, which is the final blog post of the 7 days of Platform.sh series, I will be discussing what a source operation is on Platform.sh, the problem it solves and how to set up one for any of your applications deployed on Platform.sh.
 category: sevendaysofplatformsh
 tags:
