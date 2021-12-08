@@ -4,7 +4,8 @@ title: Deploying a CMS with Gatsby on Platform.sh
 slug: deploying-a-cms-with-gatsby-on-platformsh
 draft: false
 date: 2021-10-28T17:12:33.754Z
-description: On day one of the 7 days of the Platformsh series, I discussed how
+description: >-
+  On day one of the 7 days of the Platformsh series, I discussed how
   Platform.sh helps Gatsby and React developers host their Gatsby-based web
   application frontend. Today, we’ll be discussing how platform.sh supports the
   deployment of multiple applications as a single project, we’ll be using Gatsby
