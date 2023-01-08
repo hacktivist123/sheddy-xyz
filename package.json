@@ -13,6 +13,9 @@
     "lint:scss": "stylelint \"src/**/*.scss\"",
     "lint": "concurrently \"yarn run lint:js\" \"yarn run lint:scss\" \"yarn flow\""
   },
+  "engines": {
+    "node": ">=16"
+  },
   "repository": "https://github.com/hacktivist123/sheddy-xyz",
   "author": "Shedrack Akintayo <akintayoshedrackk@gmail.com>",
   "license": "MIT",
@@ -73,13 +76,13 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "netlify-cms-app": "^2.12.12",
-    "node-sass": "^4.13.1",
     "normalize-scss": "^7.0.1",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "sass": "^1.57.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
