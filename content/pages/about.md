@@ -12,8 +12,7 @@ I love to [write](/), code, and [teach](/pages/talks).
 
 Personally, I love constant learning, growing and working towards becoming a better version of myself 😄.
 
-Professionally, I am Developer Relations Manager at [Wilco](https://trywilco
-com), where we are working on a next-generation platoform for developer education.
+Professionally, I am Developer Relations Manager at [Wilco](https://trywilco.com), where we are working on a next-generation platoform for developer education.
 
 I am well experienced in organising developer driven events and also managing developer communities. On some days, I enjoy writing API documentation, as well as building APIs, using Nodejs alongside logging and ARM tools like New Relic etc.
 
