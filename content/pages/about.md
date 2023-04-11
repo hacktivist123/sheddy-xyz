@@ -6,13 +6,14 @@ socialImage: 'https://res.cloudinary.com/hacktivist/image/upload/v1582900689/IMG
 
 Hi there, I'm Shedrack Akintayo! 👋
 
-I am a Developer Advocate 🥑, Software Developer, and Technical Writer. I have ~4 years professional expertise in Software Development, majoring mostly in Frontend technologies.
+I am a Developer Advocate 🥑, Software Developer, and Technical Writer. I have 5 years professional expertise in Software Development and Developer Relations.
 
 I love to [write](/), code, and [teach](/pages/talks).
 
 Personally, I love constant learning, growing and working towards becoming a better version of myself 😄.
 
-Professionally, I am Developer Relations Engineer at [Platfrom.sh](https://platform.sh), where we are working on a next-generation end-to-end PaaS that provide a complete Cloud Solution for developers.
+Professionally, I am Developer Relations Manager at [Wilco](https://trywilco
+com), where we are working on a next-generation end-to-end PaaS that provide a complete Cloud Solution for developers.
 
 I am well experienced in organising developer driven events and also managing developer communities. On some days, I enjoy writing API documentation, as well as building APIs, using Nodejs alongside logging and ARM tools like New Relic etc.
 
