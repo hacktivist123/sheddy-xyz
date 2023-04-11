@@ -16,7 +16,7 @@ Professionally, I am Developer Relations Manager at [Wilco](https://trywilco.com
 
 I am well experienced in organising developer driven events and also managing developer communities. On some days, I enjoy writing API documentation, as well as building APIs, using Nodejs alongside logging and ARM tools like New Relic etc.
 
-In my free time, I write techincal articles mostly on Cloud Native Technologies, Javascript etc. ~3 experience in Technical writing for companies and publications alongside a track record in helping many developer communities in my locality organise and plan events.
+In my free time, I write techincal articles mostly on Cloud Native Technologies, Javascript and other topics that interest me.
 
 ### Main Spoken Language
 
