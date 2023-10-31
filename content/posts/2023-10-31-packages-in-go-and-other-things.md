@@ -4,7 +4,7 @@ title: Packages in Go and Other Things
 slug: packages-in-go-and-other-things
 draft: false
 date: 2023-10-31T14:56:06.876Z
-description: In today's issue, I share some of my notes on packages, variables and types
+description: In this issue, I share some of my notes on packages, variables and types
 category: golang
 tags:
   - golang
