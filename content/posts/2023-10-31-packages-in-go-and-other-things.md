@@ -35,6 +35,7 @@ tags:
   )
   ```
 * The entrance point for any Go binary is a package named `main` that has a function called `main()`
+* The init function runs before the `main()` function, this is useful in situations where you need to assign command line flags to variables before you call the main function.
 * Go is a statically typed language
 * In a statically typed language, the type is both what is stored in the variable and what can be stored in the variable.
 * **Go Built-in Types**
@@ -49,7 +50,6 @@ tags:
   * `uint` uint8 uint16 uint32 uint64
   * `uintptr` - holds a pointer address
   * complex64 complex128 - complex numbers
-
 * package level → meaning outside a function
 * you can only declare a variable like this within a function
 
